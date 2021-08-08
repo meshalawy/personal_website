@@ -1,0 +1,11 @@
+{
+    "name": "Ruby",
+    "image": "ruby",
+    // "dockerFile": "Dockerfile",
+    "appPort": 8090,
+    "forwardPorts": [4000],
+    "extensions": [],
+    "mounts": [
+      "source=/Users/musle005/.ssh,target=/root/.ssh,type=bind,consistency=cached"
+    ]
+  }
