@@ -1,0 +1,31 @@
+The Film Weekly Import requires the following Java Libraries
+
+- MySQL Connector/J - version 5.1.17
+  http://dev.mysql.com/downloads/connector/j/
+
+- Apache Commons CLI - version 1.2
+  http://commons.apache.org/cli/
+
+- Apache Commons Collections - version 3.2.1
+  http://commons.apache.org/collections/
+
+- Apache Commons Configuration - version 1.7
+  http://commons.apache.org/configuration/
+
+- Apache Commons Lang - version 2.6
+  http://commons.apache.org/lang/
+
+- Apache Commons Logging - version 1.1.1
+  http://commons.apache.org/logging/
+
+- Apache log4j - version 1.2.16
+  http://logging.apache.org/log4j
+
+- opencsv - version 2.3
+  http://opencsv.sourceforge.net/
+
+- Techxplorer's Java Utils Library
+  http://techxplorer.com/projects/java-utils-lib/
+
+- Google Gson - version 1.7.1
+  http://code.google.com/p/google-gson/

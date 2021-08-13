@@ -1,0 +1,1946 @@
+[
+  {
+    "latitude": -34.92506,
+    "longitude": 138.599927,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.928954,
+    "longitude": 138.596819,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.92842,
+    "longitude": 138.597163,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.928252,
+    "longitude": 138.603264,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.92367,
+    "longitude": 138.603617,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.923081,
+    "longitude": 138.596147,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.923056,
+    "longitude": 138.596235,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.923,
+    "longitude": 138.594792,
+    "type": "Open Air",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.922963,
+    "longitude": 138.603418,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.922926,
+    "longitude": 138.598352,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.922904,
+    "longitude": 138.598144,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.922882,
+    "longitude": 138.601133,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.922859,
+    "longitude": 138.60179,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.922853,
+    "longitude": 138.601024,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.922852,
+    "longitude": 138.604177,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.922753,
+    "longitude": 138.60419,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.922672,
+    "longitude": 138.6058381,
+    "type": "Cinema",
+    "locality": "Central Business District"
+  },
+  {
+    "latitude": -34.858982,
+    "longitude": 138.519687,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.267436,
+    "longitude": 138.48256,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -30.450273,
+    "longitude": 137.162526,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -30.449865,
+    "longitude": 137.163547,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.5011446,
+    "longitude": 139.0480842,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.049153,
+    "longitude": 138.428123,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.42307,
+    "longitude": 137.917428,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.986877,
+    "longitude": 138.556372,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.025342,
+    "longitude": 138.685888,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.025288,
+    "longitude": 138.685582,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.1461701,
+    "longitude": 138.4151853,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.252083,
+    "longitude": 140.465479,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.249671,
+    "longitude": 140.436893,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -37.480593,
+    "longitude": 140.012501,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.285962,
+    "longitude": 140.600344,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.285321,
+    "longitude": 140.605568,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.820426,
+    "longitude": 138.95474,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.02286,
+    "longitude": 138.618421,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.021427,
+    "longitude": 138.616126,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -33.8464179,
+    "longitude": 138.488739,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.563146,
+    "longitude": 138.761483,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.56273,
+    "longitude": 138.76365,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.881106,
+    "longitude": 138.349585,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.882812,
+    "longitude": 138.351447,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -36.313448,
+    "longitude": 140.773005,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -36.3111665,
+    "longitude": 140.7733804,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.903228,
+    "longitude": 138.579711,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.009634,
+    "longitude": 138.759986,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.018444,
+    "longitude": 138.519382,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -33.69459,
+    "longitude": 138.403385,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.682718,
+    "longitude": 138.93796,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.865113,
+    "longitude": 138.007923,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.039386,
+    "longitude": 139.766,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.182431,
+    "longitude": 138.483084,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.876734,
+    "longitude": 138.665397,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -32.126734,
+    "longitude": 133.673778,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.136743,
+    "longitude": 138.486692,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -33.837927,
+    "longitude": 138.614511,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.8224912,
+    "longitude": 138.6017812,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.109252,
+    "longitude": 138.628846,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.702094,
+    "longitude": 136.493715,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.981153,
+    "longitude": 138.592008,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.9513741,
+    "longitude": 138.5896557,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -29.013244,
+    "longitude": 134.754482,
+    "type": "Open Air",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.696337,
+    "longitude": 139.857212,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.683618,
+    "longitude": 136.924908,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.353144,
+    "longitude": 138.206076,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.2641785,
+    "longitude": 135.7275957,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.699016,
+    "longitude": 137.710084,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.697448,
+    "longitude": 137.709448,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.925873,
+    "longitude": 138.624896,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.10061,
+    "longitude": 138.79375,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.084683,
+    "longitude": 137.745704,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.969898,
+    "longitude": 138.572913,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -33.649001,
+    "longitude": 134.889553,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.171455,
+    "longitude": 139.084599,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.952772,
+    "longitude": 138.572846,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.898714,
+    "longitude": 138.537181,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.907789,
+    "longitude": 138.547188,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.454464,
+    "longitude": 138.809953,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.953403,
+    "longitude": 138.634975,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.59954,
+    "longitude": 138.7491411,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.359547,
+    "longitude": 138.392611,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.844493,
+    "longitude": 138.60214,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.854651,
+    "longitude": 138.653974,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -33.273422,
+    "longitude": 138.357392,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.2692819,
+    "longitude": 138.3567443,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -37.687654,
+    "longitude": 140.611398,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.98029,
+    "longitude": 138.516537,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.980011,
+    "longitude": 138.519185,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.978598,
+    "longitude": 138.512272,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.953245,
+    "longitude": 138.589825,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.952562,
+    "longitude": 138.589932,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.501983,
+    "longitude": 138.7831,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.82512,
+    "longitude": 138.883278,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.824787,
+    "longitude": 138.883562,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.917707,
+    "longitude": 138.614833,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.02882,
+    "longitude": 138.809365,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.411716,
+    "longitude": 138.892776,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.356089,
+    "longitude": 138.680883,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.07553,
+    "longitude": 138.562833,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.893707,
+    "longitude": 138.656885,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.933961,
+    "longitude": 138.498957,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.916748,
+    "longitude": 138.493807,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.740452,
+    "longitude": 138.677029,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.932245,
+    "longitude": 138.563818,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.905532,
+    "longitude": 138.5709,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -32.730812,
+    "longitude": 137.15015,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.205025,
+    "longitude": 138.605041,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.966103,
+    "longitude": 137.698643,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.961893,
+    "longitude": 137.720247,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -37.562727,
+    "longitude": 140.699612,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.148573,
+    "longitude": 138.658426,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.3410932,
+    "longitude": 138.9151993,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.096092,
+    "longitude": 139.89172,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -36.098124,
+    "longitude": 140.353614,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.862044,
+    "longitude": 138.588552,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.882775,
+    "longitude": 138.549647,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -33.138335,
+    "longitude": 136.420655,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.656624,
+    "longitude": 137.638356,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -36.829915,
+    "longitude": 139.85278,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.967631,
+    "longitude": 138.608863,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.875279,
+    "longitude": 138.63307,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.330012,
+    "longitude": 140.514972,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.29625,
+    "longitude": 139.037006,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.184982,
+    "longitude": 138.300733,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -30.596308,
+    "longitude": 138.404454,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.048992,
+    "longitude": 138.863223,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.90485,
+    "longitude": 138.874319,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.568193,
+    "longitude": 135.757296,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.926563,
+    "longitude": 138.539545,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.926013,
+    "longitude": 138.52957,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.459907,
+    "longitude": 140.558754,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.45152,
+    "longitude": 140.570385,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.450907,
+    "longitude": 140.570434,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.450387,
+    "longitude": 140.570274,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -36.972354,
+    "longitude": 140.370085,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.601155,
+    "longitude": 138.890817,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.172701,
+    "longitude": 138.836364,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.912937,
+    "longitude": 138.675239,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.374162,
+    "longitude": 137.673247,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.438339,
+    "longitude": 138.509869,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.43719,
+    "longitude": 138.509866,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.914381,
+    "longitude": 139.311582,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.850472,
+    "longitude": 138.552085,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -30.159317,
+    "longitude": 131.580884,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.89523,
+    "longitude": 138.641021,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.015799,
+    "longitude": 138.546264,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.995467,
+    "longitude": 138.542209,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.94439,
+    "longitude": 138.571155,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.143606,
+    "longitude": 138.877814,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.926229,
+    "longitude": 138.651517,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.206606,
+    "longitude": 138.58898,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.21929,
+    "longitude": 138.543706,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.217598,
+    "longitude": 138.541144,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.180594,
+    "longitude": 138.763304,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.827193,
+    "longitude": 138.187957,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.825543,
+    "longitude": 138.18763,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.686529,
+    "longitude": 139.338683,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.4047,
+    "longitude": 138.968655,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.923951,
+    "longitude": 138.567413,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -37.594943,
+    "longitude": 140.353698,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -37.594508,
+    "longitude": 140.340517,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.772333,
+    "longitude": -34.772333,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.772333,
+    "longitude": 137.595888,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.769977,
+    "longitude": 137.595859,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.857851,
+    "longitude": 135.155567,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.9168,
+    "longitude": 138.723918,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.977003,
+    "longitude": 138.620178,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.01506,
+    "longitude": 138.558895,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.828257,
+    "longitude": 138.706871,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.0686198,
+    "longitude": 137.5918907,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.277821,
+    "longitude": 140.347335,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.033333,
+    "longitude": 139.666667,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.120585,
+    "longitude": 138.523625,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.0672411,
+    "longitude": 138.8587342,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -37.541835,
+    "longitude": 140.456608,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -37.828719,
+    "longitude": 140.781004,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -37.814929,
+    "longitude": 140.793586,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -37.82728,
+    "longitude": 140.776792,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.774825,
+    "longitude": 139.049962,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.149326,
+    "longitude": 139.284569,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.12013,
+    "longitude": 139.273952,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.043493,
+    "longitude": 138.759921,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.393279,
+    "longitude": 138.461881,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.392018,
+    "longitude": 138.46302,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.880793,
+    "longitude": 138.602565,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.037015,
+    "longitude": 138.914059,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -37.54332,
+    "longitude": 140.81473,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -36.962107,
+    "longitude": 140.749405,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -36.9550218,
+    "longitude": 140.7430918,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.518365,
+    "longitude": 139.174049,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.903002,
+    "longitude": 138.594632,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.921242,
+    "longitude": 138.638426,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.920754,
+    "longitude": 138.636525,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.466667,
+    "longitude": 138.983333,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.98467,
+    "longitude": 138.841603,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.052344,
+    "longitude": 138.554789,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -32.733786,
+    "longitude": 138.612069,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.787901,
+    "longitude": 138.501804,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.269743,
+    "longitude": 138.545938,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.998788,
+    "longitude": 138.59332,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.944308,
+    "longitude": 138.621627,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.94359,
+    "longitude": 138.620904,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.857973,
+    "longitude": 138.535717,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -37.378987,
+    "longitude": 140.840719,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -37.372218,
+    "longitude": 140.840507,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.973333,
+    "longitude": 138.837588,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.568007,
+    "longitude": 137.880736,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.26151,
+    "longitude": 140.905556,
+    "type": "Open Air",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.260404,
+    "longitude": 140.908434,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.507013,
+    "longitude": 139.133318,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.416307,
+    "longitude": 137.502374,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.720949,
+    "longitude": 134.833702,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.845147,
+    "longitude": 138.500924,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.844468,
+    "longitude": 138.504716,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -32.491957,
+    "longitude": 137.762864,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.487315,
+    "longitude": 137.778386,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.600502,
+    "longitude": 137.933322,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.53139,
+    "longitude": 138.6722,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.530376,
+    "longitude": 138.681034,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.736402,
+    "longitude": 135.858744,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.721606,
+    "longitude": 135.856587,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.718687,
+    "longitude": 135.856296,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -38.053413,
+    "longitude": 140.702423,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.148995,
+    "longitude": 138.472321,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -33.181134,
+    "longitude": 138.007774,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.1776613,
+    "longitude": 138.0072687,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.177085,
+    "longitude": 138.010057,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.496189,
+    "longitude": 137.482969,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.777674,
+    "longitude": 137.860794,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.184944,
+    "longitude": 138.147985,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.2853,
+    "longitude": 137.992798,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.887857,
+    "longitude": 138.594187,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.878121,
+    "longitude": 138.593257,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -32.345829,
+    "longitude": 138.040577,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.345907,
+    "longitude": 140.635637,
+    "type": "Open Air",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.525514,
+    "longitude": 138.189976,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.538662,
+    "longitude": 138.224566,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.176546,
+    "longitude": 140.745223,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.174001,
+    "longitude": 140.75124,
+    "type": "Open Air",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.173776,
+    "longitude": 140.750486,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.173742,
+    "longitude": 140.750657,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.093563,
+    "longitude": 138.539749,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.893817,
+    "longitude": 138.568892,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.160683,
+    "longitude": 138.747178,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.159283,
+    "longitude": 138.747432,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -37.162486,
+    "longitude": 139.754892,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.989607,
+    "longitude": 139.082284,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.084605,
+    "longitude": 138.781505,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.08393,
+    "longitude": 138.782324,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.914065,
+    "longitude": 138.653264,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.912771,
+    "longitude": 138.625175,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.911114,
+    "longitude": 138.626657,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.762502,
+    "longitude": 138.647604,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.76647,
+    "longitude": 138.625707,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.031706,
+    "longitude": 138.52079,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.903064,
+    "longitude": 138.514391,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.838925,
+    "longitude": 138.484624,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.838556,
+    "longitude": 138.481213,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -32.376908,
+    "longitude": 133.935876,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.783038,
+    "longitude": 138.213734,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.782139,
+    "longitude": 138.214242,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.499807,
+    "longitude": 138.607846,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.499101,
+    "longitude": 138.607592,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.910362,
+    "longitude": 137.796915,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.908974,
+    "longitude": 137.797169,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -35.004213,
+    "longitude": 138.715049,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.25929,
+    "longitude": 138.892972,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.259013,
+    "longitude": 138.892633,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.258875,
+    "longitude": 138.890348,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.254934,
+    "longitude": 138.892553,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.795778,
+    "longitude": 134.211439,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.253945,
+    "longitude": 139.453882,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.523535,
+    "longitude": 138.961553,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.497936,
+    "longitude": 138.984816,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -30.709337,
+    "longitude": 134.564603,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.273998,
+    "longitude": 138.771085,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.820757,
+    "longitude": 138.727284,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -33.150367,
+    "longitude": 138.919335,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.92365,
+    "longitude": 138.56903,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -32.14601,
+    "longitude": 133.650032,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.88282,
+    "longitude": 140.05462,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.37523,
+    "longitude": 136.102522,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.594795,
+    "longitude": 138.515834,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.95856,
+    "longitude": 138.607857,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.951185,
+    "longitude": 138.607337,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.950626,
+    "longitude": 138.607354,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.95612,
+    "longitude": 138.744679,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.55443,
+    "longitude": 138.622853,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.5539,
+    "longitude": 138.623028,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.185184,
+    "longitude": 139.977226,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.179592,
+    "longitude": 139.986276,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.897517,
+    "longitude": 138.614564,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.89521,
+    "longitude": 138.617208,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -33.932988,
+    "longitude": 137.627831,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.990576,
+    "longitude": 137.401028,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.009173,
+    "longitude": 138.540447,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -33.241782,
+    "longitude": 135.598207,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.47244,
+    "longitude": 138.684011,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.960289,
+    "longitude": 138.645219,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.945648,
+    "longitude": 138.504988,
+    "type": "Drive-in",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -33.040207,
+    "longitude": 137.578574,
+    "type": "Open Air",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.037977,
+    "longitude": 137.573628,
+    "type": "Drive-in",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.034399,
+    "longitude": 137.584915,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.031284,
+    "longitude": 137.584276,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -36.396152,
+    "longitude": 140.309316,
+    "type": "Open Air",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -36.396128,
+    "longitude": 140.310118,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.671029,
+    "longitude": 138.890383,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.270718,
+    "longitude": 138.554085,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.27063,
+    "longitude": 138.554022,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.270599,
+    "longitude": 138.553843,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.651278,
+    "longitude": 138.099005,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.032499,
+    "longitude": 138.268568,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.034526,
+    "longitude": 138.268888,
+    "type": "Touring Circuit",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -32.40376,
+    "longitude": 134.533517,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.969709,
+    "longitude": 138.885424,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.952372,
+    "longitude": 138.875342,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.879881,
+    "longitude": 138.536314,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.878284,
+    "longitude": 138.537507,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -34.866829,
+    "longitude": 138.547497,
+    "type": "Cinema",
+    "locality": "Suburban"
+  },
+  {
+    "latitude": -31.200684,
+    "longitude": 136.825919,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -31.201196,
+    "longitude": 136.782148,
+    "type": "Open Air",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -33.04652,
+    "longitude": 135.459993,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.457509,
+    "longitude": 138.349904,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -34.137904,
+    "longitude": 135.726248,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  },
+  {
+    "latitude": -35.01904,
+    "longitude": 137.604941,
+    "type": "Cinema",
+    "locality": "Country/Rural"
+  }
+]

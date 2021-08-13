@@ -1,0 +1,376 @@
+/**
+ * Mapping the Movies
+ *
+ * @copyright     Copyright 2011, Flinders Institute for Research in the Humanities - Flinders University (http://www.flinders.edu.au)
+ * @license       All Rights Reserved
+ */
+html {
+	height: 100%;
+	margin: 0;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	min-height: 100%; 
+	padding: 0;
+	background-color: #fff; 
+	color: #000; 
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 75%; 
+}
+
+#container {
+	width: 100%;
+	display: block;
+	clear: both;
+	position: inherit;
+}
+
+header {
+	background-color: #002f60;
+	color:  #fff;
+	padding-bottom: 1px;
+	height: 65px;
+	display: block;
+}
+
+.fw-flinders-logo {
+	float: right;
+	border-style: none;
+}
+
+.fw-flinders-logo a img {
+	border-style: none;
+}
+
+hgroup {
+	margin-left: 1em;
+	margin-right: 1em;
+	display: block;
+}
+
+nav {
+	background-color: #002f60;
+	color: #fff;
+	padding-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-color: #ffd300;
+	width:100%;
+	display: block;
+}
+
+nav p {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+#map_container {
+
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+	clear: both;
+	overflow: auto;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+}
+
+footer {
+	background-color: #002f60;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	height: 30px; 
+	width: 100%;
+	padding-top: 5px;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-color: #ffd300;
+	display: block;
+}
+
+footer p.left {
+	float:left;
+	margin-left: 1em;
+	margin-top: 0.5em;
+}
+
+footer p.right {
+	float: right;
+	margin-top: 0.5em;
+	margin-right: 1em;
+}
+
+footer a { 
+	text-decoration: underline;
+	color: #fff !important;
+}
+
+footer a:hover {
+	color: #fff !important;
+}	
+
+footer a:visited:hover {
+	color: #fff !important;
+}
+
+/* ui elements */
+.fw-button {
+	margin-right: 1.0em !important;
+}
+
+.fw-dialog h1 {
+	font-size: 1.3em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.fw-dialog h2 {
+	font-size: 1.2em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.fw-dialog h3 {
+	font-size: 1.1em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.fw-dialog h4 {
+	font-size: 1.0em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.fw-dialog p {
+	text-align:justify;
+}
+
+.fw-search-result {
+	padding-bottom: 0.5em;
+}
+
+.fw-add-to-map {
+	float: right;
+}
+
+.jump-to-marker {
+	margin-right: 1em;
+}
+
+.dialog-menu ul {
+	margin: 0; 
+	padding: 0;
+	float: left;
+}
+
+.dialog-menu ul li {
+	display: inline;
+}
+
+.dialog-menu li {
+	padding-right: 1em;
+}
+
+.dialog-help {
+	padding-bottom: 0.5em;
+}
+
+.dialog-help-2 {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.clickable {
+	text-decoration: underline;
+	color: #eb6e06;
+	cursor: pointer;
+}
+
+.fw-clickable {
+	text-decoration: underline;
+	color: #eb6e06;
+	cursor: pointer;
+}
+
+.clear {
+	clear: both;
+	height: 1em;
+}
+
+.search-progress {
+	text-align: center;
+	width: 100%;
+}
+
+.search-message-box {
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+.status-icon {
+	float: left; 
+	margin-right: .3em;
+	margin-left:  .5em;
+}
+
+.adv-filter-menu select {
+	width: 100%;
+}
+
+.fw-dialog a {
+	text-decoration: underline;
+	color: #eb6e06;
+}
+
+.fw-dialog a:hover {
+	text-decoration: underline;
+	color: #eb6e06 !important;
+}
+
+.fw-dialog a:visited {
+	text-decoration: underline;
+	color: #eb6e06 !important;
+}
+
+.fw-dialog a.external {
+	background-image: url('images/external-link.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 13px;
+}
+
+.fw-dialog p {
+	padding-bottom: 1.0em;
+}
+
+.fw-dialog-table {
+	width: 100%;
+}
+
+.fw-dialog-table th {
+	font-weight: bold;
+	text-align: center;
+}
+
+.fw-dialog-table td {
+	width: 20%;
+}
+
+.fw-dialog-table select {
+	width: 100%;
+}
+
+.fw-dialog-highlight {
+	width: 100%;
+	background-color: #F5F5F5;
+    color:black;
+    padding-left: 1em;
+}
+
+.fw-welcome-message {
+	height: 95%;
+}
+
+.fw-browse-tabs {
+	min-height: 100%;
+}
+
+.ui-tabs {
+	border: none !important;
+}
+
+.fw-ui-tab {
+	margin-right: 1.0em !important;
+}
+
+.fw-ui-tab-container {
+	padding-left: 1.0em !important;
+	padding-top: 0.5em !important;
+}
+
+.fw-legend-text table {
+	width: 100%;
+}
+
+.fw-center-cell {
+	text-align: center;
+}
+
+#legend_marker_icons tr:nth-child(odd) td {
+	background-color: #F5F5F5;
+    color:black;
+}
+
+/* info windows */
+.fw-info-window-content {
+	width: 500px;
+}
+
+.fw-info-window-content a.external {
+	background-image: url('images/external-link.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 13px;
+}
+
+.fw-info-window-content a {
+	text-decoration: underline;
+	color: #eb6e06 !important;
+}
+
+.fw-info-window-content a:hover {
+	text-decoration: underline;
+	color: #eb6e06 !important;
+}
+
+.fw-info-window-content a:visited {
+	text-decoration: underline;
+	color: #eb6e06 !important;
+}
+
+.fw-info-window-content ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.fw-info-window-content li:nth-child(odd) {
+    background-color: #F5F5F5;
+    color:black;
+}
+
+.fw-info-window-content h1, h2, h3, h4 {
+	white-space:nowrap;
+}
+
+.fw-info-window-content h2, h3, h4 {
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-color: #002f60;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+/* help dialog */
+.help-top-link {
+	font-weight: normal;
+	font-size: 0.9em;
+}
+
+/* time slider */
+
+
+/* prevent fouc */
+.js {
+	display: none;
+}

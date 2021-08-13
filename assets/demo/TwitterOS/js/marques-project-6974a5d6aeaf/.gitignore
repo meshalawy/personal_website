@@ -1,0 +1,4 @@
+# ignore build files and other annoying cruft
+.DS_Store
+# ignore files created by accessing the site in the resources directory
+marques/app/resources/*

@@ -1,0 +1,2714 @@
+<!--
+You are free to copy and use this sample in accordance with the terms of the
+Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>
+      Tweet Languages Distribution in Saudi Arabia
+    </title>
+	
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js">
+    </script>
+    <script type="text/javascript" src="js/jquery-ui-1.7.1.custom.min.js">
+    </script>
+    
+    <script type="text/javascript" src="https://www.google.com/jsapi">
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places">
+    </script>
+	<script type="text/javascript" src="js/v3_ll_grat.js">
+    </script>
+    
+    <script src="js/jquery.js">
+    </script>
+    <script src="js/bootstrap-transition.js">
+    </script>
+    <script src="js/bootstrap-dropdown.js">
+    </script>
+      
+
+	
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    
+    
+	
+	<style>
+      html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+        font-size: 90%;
+      }
+      
+      
+      .cbox{
+        font-family: "Tahoma", "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+        font-size: 90%;
+      }
+      
+      
+      .language_name {
+        width:90px;
+        padding-left:3px;
+        color:#999;
+        font-size:12px;
+      }
+      
+      .language_color {
+        -o-border-radius:4px;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        
+        width:19px;
+        height:10px;
+        
+      }
+      
+      
+	</style>
+    
+    <script type="text/javascript">
+        google.load('visualization', '1', {
+            packages: ['corechart']
+        });
+    </script>
+    
+    
+    <script type="text/javascript">
+
+
+
+        
+		var decdataTables = [];
+		var regionsLatLng = [];
+        
+		
+		//December Data
+		
+		//Lat and Lng 
+		var decregionsLatLng4 = [];
+        var decregionsLatLng5 = [];
+        var decregionsLatLng6 = [];
+        var decregionsLatLng7 = [];
+        var decregionsLatLng8 = [];
+        var decregionsLatLng9 = [];
+        var decregionsLatLng10 = [];
+        var decregionsLatLng11 = [];
+        var decregionsLatLng12 = [];
+        var decregionsLatLng13 = [];
+        var decregionsLatLng14 = [];
+        var decregionsLatLng15 = [];
+
+		//Arabic Counts
+		
+        var decarabicCounts4 = []
+        var decarabicCounts5 = [];
+        var decarabicCounts6 = [];
+        var decarabicCounts7 = [];
+        var decarabicCounts8 = [];
+        var decarabicCounts9 = [];
+        var decarabicCounts10 = [];
+        var decarabicCounts11 = [];
+        var decarabicCounts12 = [];
+        var decarabicCounts13 = [];
+        var decarabicCounts14 = [];
+        var decarabicCounts15 = [];
+
+		//English Counts
+		
+		var decenglishCounts4 = []
+        var decenglishCounts5 = [];
+        var decenglishCounts6 = [];
+        var decenglishCounts7 = [];
+        var decenglishCounts8 = [];
+        var decenglishCounts9 = [];
+        var decenglishCounts10 = [];
+        var decenglishCounts11 = [];
+        var decenglishCounts12 = [];
+        var decenglishCounts13 = [];
+        var decenglishCounts14 = [];
+        var decenglishCounts15 = [];
+        
+		//Persian Counts
+		
+		var decpersianCounts4 = []
+        var decpersianCounts5 = [];
+        var decpersianCounts6 = [];
+		var decpersianCounts7 = [];
+		var decpersianCounts8 = [];
+		var decpersianCounts9 = [];
+		var decpersianCounts10 = [];
+		var decpersianCounts11 = [];
+		var decpersianCounts12 = [];
+		var decpersianCounts13 = [];
+		var decpersianCounts14 = [];
+		var decpersianCounts15 = [];
+		
+		//Korean Counts
+		
+		var deckoreanCounts4 = [];
+		var deckoreanCounts5 = [];
+		var deckoreanCounts6 = [];
+		var deckoreanCounts7 = [];
+		var deckoreanCounts8 = [];
+		var deckoreanCounts9 = [];
+		var deckoreanCounts10 = [];
+		var deckoreanCounts11 = [];
+		var deckoreanCounts12 = [];
+		var deckoreanCounts13 = [];
+		var deckoreanCounts14 = [];
+		var deckoreanCounts15 = [];
+		
+		//indonesian Counts
+		
+		var decindonesianCounts4 = [];
+		var decindonesianCounts5 = [];
+		var decindonesianCounts6 = [];
+		var decindonesianCounts7 = [];
+		var decindonesianCounts8 = [];
+		var decindonesianCounts9 = [];
+		var decindonesianCounts10 = [];
+		var decindonesianCounts11 = [];
+		var decindonesianCounts12 = [];
+		var decindonesianCounts13 = [];
+		var decindonesianCounts14 = [];
+		var decindonesianCounts15 = [];
+		
+		//spanish Counts
+		
+		var decspanishCounts4 = [];
+		var decspanishCounts5 = [];
+		var decspanishCounts6 = [];
+		var decspanishCounts7 = [];
+		var decspanishCounts8 = [];
+		var decspanishCounts9 = [];
+		var decspanishCounts10 = [];
+		var decspanishCounts11 = [];
+		var decspanishCounts12 = [];
+		var decspanishCounts13 = [];
+		var decspanishCounts14 = [];
+		var decspanishCounts15 = [];
+		
+		//urdu Counts
+		
+		var decurduCounts4 = [];
+		var decurduCounts5 = [];
+		var decurduCounts6 = [];
+		var decurduCounts7 = [];
+		var decurduCounts8 = [];
+		var decurduCounts9 = [];
+		var decurduCounts10 = [];
+		var decurduCounts11 = [];
+		var decurduCounts12 = [];
+		var decurduCounts13 = [];
+		var decurduCounts14 = [];
+		var decurduCounts15 = [];
+		
+		//turkish Counts
+		
+		var decturkishCounts4 = [];
+		var decturkishCounts5 = [];
+		var decturkishCounts6 = [];
+		var decturkishCounts7 = [];
+		var decturkishCounts8 = [];
+		var decturkishCounts9 = [];
+		var decturkishCounts10 = [];
+		var decturkishCounts11 = [];
+		var decturkishCounts12 = [];
+		var decturkishCounts13 = [];
+		var decturkishCounts14 = [];
+		var decturkishCounts15 = [];
+		
+		//portuguese Counts
+		
+		var decportugCounts4 = [];
+		var decportugCounts5 = [];
+		var decportugCounts6 = [];
+		var decportugCounts7 = [];
+		var decportugCounts8 = [];
+		var decportugCounts9 = [];
+		var decportugCounts10 = [];
+		var decportugCounts11 = [];
+		var decportugCounts12 = [];
+		var decportugCounts13 = [];
+		var decportugCounts14 = [];
+		var decportugCounts15 = [];
+		
+		//tagalog counts
+		var dectagalogCounts4 = [];
+		var dectagalogCounts5 = [];
+		var dectagalogCounts6 = [];
+		var dectagalogCounts7 = [];
+		var dectagalogCounts8 = [];
+		var dectagalogCounts9 = [];
+		var dectagalogCounts10 = [];
+		var dectagalogCounts11 = [];
+		var dectagalogCounts12 = [];
+		var dectagalogCounts13 = [];
+		var dectagalogCounts14 = [];
+		var dectagalogCounts15 = [];
+		
+		//german counts
+		var decgermanCounts4 = [];
+		var decgermanCounts5 = [];
+		var decgermanCounts6 = [];
+		var decgermanCounts7 = [];
+		var decgermanCounts8 = [];
+		var decgermanCounts9 = [];
+		var decgermanCounts10 = [];
+		var decgermanCounts11 = [];
+		var decgermanCounts12 = [];
+		var decgermanCounts13 = [];
+		var decgermanCounts14 = [];
+		var decgermanCounts15 = [];
+		
+		//french counts
+		var decfrenchCounts4 = [];
+		var decfrenchCounts5 = [];
+		var decfrenchCounts6 = [];
+		var decfrenchCounts7 = [];
+		var decfrenchCounts8 = [];
+		var decfrenchCounts9 = [];
+		var decfrenchCounts10 = [];
+		var decfrenchCounts11 = [];
+		var decfrenchCounts12 = [];
+		var decfrenchCounts13 = [];
+		var decfrenchCounts14 = [];
+		var decfrenchCounts15 = [];
+		
+		//tamil counts
+		var dectamilCounts4 = [];
+		var dectamilCounts5 = [];
+		var dectamilCounts6 = [];
+		var dectamilCounts7 = [];
+		var dectamilCounts8 = [];
+		var dectamilCounts9 = [];
+		var dectamilCounts10 = [];
+		var dectamilCounts11 = [];
+		var dectamilCounts12 = [];
+		var dectamilCounts13 = [];
+		var dectamilCounts14 = [];
+		var dectamilCounts15 = [];
+		
+		//other counts
+		var decotherCounts4 = [];
+		var decotherCounts5 = [];
+		var decotherCounts6 = [];
+		var decotherCounts7 = [];
+		var decotherCounts8 = [];
+		var decotherCounts9 = [];
+		var decotherCounts10 = [];
+		var decotherCounts11 = [];
+		var decotherCounts12 = [];
+		var decotherCounts13 = [];
+		var decotherCounts14 = [];
+		var decotherCounts15 = [];
+		
+		//December USER Data
+		
+		//Lat and Lng 
+		var user_decregionsLatLng4 = [];
+        var user_decregionsLatLng5 = [];
+        var user_decregionsLatLng6 = [];
+        var user_decregionsLatLng7 = [];
+        var user_decregionsLatLng8 = [];
+        var user_decregionsLatLng9 = [];
+        var user_decregionsLatLng10 = [];
+        var user_decregionsLatLng11 = [];
+        var user_decregionsLatLng12 = [];
+        var user_decregionsLatLng13 = [];
+        var user_decregionsLatLng14 = [];
+        var user_decregionsLatLng15 = [];
+
+		//Arabic Counts
+		
+        var user_decarabicCounts4 = []
+        var user_decarabicCounts5 = [];
+        var user_decarabicCounts6 = [];
+        var user_decarabicCounts7 = [];
+        var user_decarabicCounts8 = [];
+        var user_decarabicCounts9 = [];
+        var user_decarabicCounts10 = [];
+        var user_decarabicCounts11 = [];
+        var user_decarabicCounts12 = [];
+        var user_decarabicCounts13 = [];
+        var user_decarabicCounts14 = [];
+        var user_decarabicCounts15 = [];
+
+		//English Counts
+		
+		var user_decenglishCounts4 = []
+        var user_decenglishCounts5 = [];
+        var user_decenglishCounts6 = [];
+        var user_decenglishCounts7 = [];
+        var user_decenglishCounts8 = [];
+        var user_decenglishCounts9 = [];
+        var user_decenglishCounts10 = [];
+        var user_decenglishCounts11 = [];
+        var user_decenglishCounts12 = [];
+        var user_decenglishCounts13 = [];
+        var user_decenglishCounts14 = [];
+        var user_decenglishCounts15 = [];
+        
+		//Persian Counts
+		
+		var user_decpersianCounts4 = []
+        var user_decpersianCounts5 = [];
+        var user_decpersianCounts6 = [];
+		var user_decpersianCounts7 = [];
+		var user_decpersianCounts8 = [];
+		var user_decpersianCounts9 = [];
+		var user_decpersianCounts10 = [];
+		var user_decpersianCounts11 = [];
+		var user_decpersianCounts12 = [];
+		var user_decpersianCounts13 = [];
+		var user_decpersianCounts14 = [];
+		var user_decpersianCounts15 = [];
+		
+		//Korean Counts
+		
+		var user_deckoreanCounts4 = [];
+		var user_deckoreanCounts5 = [];
+		var user_deckoreanCounts6 = [];
+		var user_deckoreanCounts7 = [];
+		var user_deckoreanCounts8 = [];
+		var user_deckoreanCounts9 = [];
+		var user_deckoreanCounts10 = [];
+		var user_deckoreanCounts11 = [];
+		var user_deckoreanCounts12 = [];
+		var user_deckoreanCounts13 = [];
+		var user_deckoreanCounts14 = [];
+		var user_deckoreanCounts15 = [];
+		
+		//indonesian Counts
+		
+		var user_decindonesianCounts4 = [];
+		var user_decindonesianCounts5 = [];
+		var user_decindonesianCounts6 = [];
+		var user_decindonesianCounts7 = [];
+		var user_decindonesianCounts8 = [];
+		var user_decindonesianCounts9 = [];
+		var user_decindonesianCounts10 = [];
+		var user_decindonesianCounts11 = [];
+		var user_decindonesianCounts12 = [];
+		var user_decindonesianCounts13 = [];
+		var user_decindonesianCounts14 = [];
+		var user_decindonesianCounts15 = [];
+		
+		//spanish Counts
+		
+		var user_decspanishCounts4 = [];
+		var user_decspanishCounts5 = [];
+		var user_decspanishCounts6 = [];
+		var user_decspanishCounts7 = [];
+		var user_decspanishCounts8 = [];
+		var user_decspanishCounts9 = [];
+		var user_decspanishCounts10 = [];
+		var user_decspanishCounts11 = [];
+		var user_decspanishCounts12 = [];
+		var user_decspanishCounts13 = [];
+		var user_decspanishCounts14 = [];
+		var user_decspanishCounts15 = [];
+		
+		//urdu Counts
+		
+		var user_decurduCounts4 = [];
+		var user_decurduCounts5 = [];
+		var user_decurduCounts6 = [];
+		var user_decurduCounts7 = [];
+		var user_decurduCounts8 = [];
+		var user_decurduCounts9 = [];
+		var user_decurduCounts10 = [];
+		var user_decurduCounts11 = [];
+		var user_decurduCounts12 = [];
+		var user_decurduCounts13 = [];
+		var user_decurduCounts14 = [];
+		var user_decurduCounts15 = [];
+		
+		//turkish Counts
+		
+		var user_decturkishCounts4 = [];
+		var user_decturkishCounts5 = [];
+		var user_decturkishCounts6 = [];
+		var user_decturkishCounts7 = [];
+		var user_decturkishCounts8 = [];
+		var user_decturkishCounts9 = [];
+		var user_decturkishCounts10 = [];
+		var user_decturkishCounts11 = [];
+		var user_decturkishCounts12 = [];
+		var user_decturkishCounts13 = [];
+		var user_decturkishCounts14 = [];
+		var user_decturkishCounts15 = [];
+		
+		//portuguese Counts
+		
+		var user_decportugCounts4 = [];
+		var user_decportugCounts5 = [];
+		var user_decportugCounts6 = [];
+		var user_decportugCounts7 = [];
+		var user_decportugCounts8 = [];
+		var user_decportugCounts9 = [];
+		var user_decportugCounts10 = [];
+		var user_decportugCounts11 = [];
+		var user_decportugCounts12 = [];
+		var user_decportugCounts13 = [];
+		var user_decportugCounts14 = [];
+		var user_decportugCounts15 = [];
+		
+		//tagalog counts
+		var user_dectagalogCounts4 = [];
+		var user_dectagalogCounts5 = [];
+		var user_dectagalogCounts6 = [];
+		var user_dectagalogCounts7 = [];
+		var user_dectagalogCounts8 = [];
+		var user_dectagalogCounts9 = [];
+		var user_dectagalogCounts10 = [];
+		var user_dectagalogCounts11 = [];
+		var user_dectagalogCounts12 = [];
+		var user_dectagalogCounts13 = [];
+		var user_dectagalogCounts14 = [];
+		var user_dectagalogCounts15 = [];
+		
+		//german counts
+		var user_decgermanCounts4 = [];
+		var user_decgermanCounts5 = [];
+		var user_decgermanCounts6 = [];
+		var user_decgermanCounts7 = [];
+		var user_decgermanCounts8 = [];
+		var user_decgermanCounts9 = [];
+		var user_decgermanCounts10 = [];
+		var user_decgermanCounts11 = [];
+		var user_decgermanCounts12 = [];
+		var user_decgermanCounts13 = [];
+		var user_decgermanCounts14 = [];
+		var user_decgermanCounts15 = [];
+		
+		//french counts
+		var user_decfrenchCounts4 = [];
+		var user_decfrenchCounts5 = [];
+		var user_decfrenchCounts6 = [];
+		var user_decfrenchCounts7 = [];
+		var user_decfrenchCounts8 = [];
+		var user_decfrenchCounts9 = [];
+		var user_decfrenchCounts10 = [];
+		var user_decfrenchCounts11 = [];
+		var user_decfrenchCounts12 = [];
+		var user_decfrenchCounts13 = [];
+		var user_decfrenchCounts14 = [];
+		var user_decfrenchCounts15 = [];
+		
+		//tamil counts
+		var user_dectamilCounts4 = [];
+		var user_dectamilCounts5 = [];
+		var user_dectamilCounts6 = [];
+		var user_dectamilCounts7 = [];
+		var user_dectamilCounts8 = [];
+		var user_dectamilCounts9 = [];
+		var user_dectamilCounts10 = [];
+		var user_dectamilCounts11 = [];
+		var user_dectamilCounts12 = [];
+		var user_dectamilCounts13 = [];
+		var user_dectamilCounts14 = [];
+		var user_dectamilCounts15 = [];
+		
+		//other counts
+		var user_decotherCounts4 = [];
+		var user_decotherCounts5 = [];
+		var user_decotherCounts6 = [];
+		var user_decotherCounts7 = [];
+		var user_decotherCounts8 = [];
+		var user_decotherCounts9 = [];
+		var user_decotherCounts10 = [];
+		var user_decotherCounts11 = [];
+		var user_decotherCounts12 = [];
+		var user_decotherCounts13 = [];
+		var user_decotherCounts14 = [];
+		var user_decotherCounts15 = [];
+		
+		var initialDraw = false;
+		var loadingCount = 0;
+		//Loading langauge counts
+		//a -- Arabic, e -- English, p -- Persian, k -- Korean
+		//s -- Spanish, u -- Urdu, t -- Turkish, pg -- Portuguese
+		// g -- German, tg -- Tagalog, m -- German, f -- French, l -- Tamil, o -- Other
+        function loadLanguagesCounts(zLevel, month, user,latlngArr, 
+									aCountsArr, eCountsArr, sCountsArr, tCountsArr,
+									iCountsArr, tgCountsArr, fCountsArr, pCountsArr, uCountsArr,
+									kCountsArr, lCountsArr, pgCountsArr, mCountsArr, oCountsArr) {
+            if (!initialDraw)
+                loadingCount++;
+
+            var fileName;
+
+			if (user == 0)
+			{
+				if (month == 11)
+					fileName = "november_zoom" + zLevel + ".csv";
+				else if (month == 12)
+					fileName = "december_zoom" + zLevel + ".csv";
+				else
+					fileName = "january_zoom" + zLevel + ".csv";
+			}
+			else if (user == 1)
+			{
+				if (month == 11)
+					fileName = "november_user_zoom" + zLevel + ".csv";
+				else if (month == 12)
+					fileName = "december_user_zoom" + zLevel + ".csv";
+				else
+					fileName = "january_user_zoom" + zLevel + ".csv";
+			}
+
+            var req = new XMLHttpRequest();
+            req.open("GET", fileName, true);
+            //req.setRequestHeader('Access-Control-Allow-Origin', '*');
+            //req.setRequestHeader('Access-Control-Allow-Credentials', '*');
+            req.send(null);
+            //req.send();
+            req.onreadystatechange = function loadLanguageCounts() {
+                if (req.readyState == 4) {
+
+                    var lines = req.responseText.split('\n');
+                    numRegions = lines.length;
+					var otherCountVar= 0;
+
+                    for (var i = 0; i < lines.length; i++) {
+					
+                        var fields = lines[i].split('\t');
+
+                        latlngArr[i] = new google.maps.LatLng(parseFloat(fields[0]), parseFloat(fields[1]));
+						aCountsArr[i] = parseFloat(fields[2]);
+						eCountsArr[i] = parseFloat(fields[3]);
+						sCountsArr[i] = parseFloat(fields[4]);
+						tCountsArr[i] = parseFloat(fields[5]);
+						iCountsArr[i] = parseFloat(fields[6]);
+						tgCountsArr[i] = parseFloat(fields[7]);
+						fCountsArr[i] = parseFloat(fields[8]);
+						pCountsArr[i] = parseFloat(fields[9]);
+						uCountsArr[i] = parseFloat(fields[10]);
+						kCountsArr[i] = parseFloat(fields[11]);
+						lCountsArr[i] = parseFloat(fields[14]);
+						pgCountsArr[i] = parseFloat(fields[15]);
+						mCountsArr[i] = parseFloat(fields[18]);
+						otherCountVar = parseFloat(fields[16]) + parseFloat(fields[12]) + parseFloat(fields[17]) + parseFloat(fields[13]) +
+                          parseFloat(fields[19]) + parseFloat(fields[20]) + parseFloat(fields[21]) + parseFloat(fields[22]) + parseFloat(fields[23]);
+						//alert(i+' '+otherCount);
+						 oCountsArr[i] = otherCountVar;
+	
+                    }
+                    /*
+                    if (zLevel == 15 & month == 12 & !initialDraw) {
+                        initialDraw = true;
+                        drawLang();
+                    }
+                    */
+                    if (!initialDraw) {
+                        loadingCount--;
+                        if (loadingCount == 0) {
+                            initialDraw = true;
+                            drawLang();
+                        }
+                    }
+                }
+
+                //alert(zLevel+' '+dataArr.length+' '+latlngArr.length+' '+aCountsArr.length);
+                
+            }
+
+
+        }
+		
+		//Loading December USER Data
+        loadLanguagesCounts(4, 12, 1,user_decregionsLatLng4, user_decarabicCounts4, user_decenglishCounts4, user_decspanishCounts4, user_decturkishCounts4,
+														user_decindonesianCounts4, user_dectagalogCounts4, user_decfrenchCounts4, user_decpersianCounts4,
+														user_decurduCounts4, user_deckoreanCounts4, user_dectamilCounts4, user_decportugCounts4, 
+														user_decgermanCounts4, user_decotherCounts4);
+        
+		loadLanguagesCounts(5, 12, 1,user_decregionsLatLng5, user_decarabicCounts5, user_decenglishCounts5, user_decspanishCounts5, user_decturkishCounts5,
+														user_decindonesianCounts5, user_dectagalogCounts5, user_decfrenchCounts5, user_decpersianCounts5,
+														user_decurduCounts5, user_deckoreanCounts5, user_dectamilCounts5, user_decportugCounts5, 
+														user_decgermanCounts5, user_decotherCounts5);
+		
+		loadLanguagesCounts(6, 12, 1,user_decregionsLatLng6, user_decarabicCounts6, user_decenglishCounts6, user_decspanishCounts6, user_decturkishCounts6,
+														user_decindonesianCounts6, user_dectagalogCounts6, user_decfrenchCounts6, user_decpersianCounts6,
+														user_decurduCounts6, user_deckoreanCounts6, user_dectamilCounts6, user_decportugCounts6, 
+														user_decgermanCounts6, user_decotherCounts6);
+		
+		loadLanguagesCounts(7, 12, 1,user_decregionsLatLng7, user_decarabicCounts7, user_decenglishCounts7, user_decspanishCounts7, user_decturkishCounts7,
+														user_decindonesianCounts7, user_dectagalogCounts7, user_decfrenchCounts7, user_decpersianCounts7,
+														user_decurduCounts7, user_deckoreanCounts7, user_dectamilCounts7, user_decportugCounts7, 
+														user_decgermanCounts7, user_decotherCounts7);
+														
+		loadLanguagesCounts(8, 12, 1,user_decregionsLatLng8, user_decarabicCounts8, user_decenglishCounts8, user_decspanishCounts8, user_decturkishCounts8,
+														user_decindonesianCounts8, user_dectagalogCounts8, user_decfrenchCounts8, user_decpersianCounts8,
+														user_decurduCounts8, user_deckoreanCounts8, user_dectamilCounts8, user_decportugCounts8, 
+														user_decgermanCounts8, user_decotherCounts8);
+														
+		loadLanguagesCounts(9, 12, 1,user_decregionsLatLng9, user_decarabicCounts9, user_decenglishCounts9, user_decspanishCounts9, user_decturkishCounts9,
+														user_decindonesianCounts9, user_dectagalogCounts9, user_decfrenchCounts9, user_decpersianCounts9,
+														user_decurduCounts9, user_deckoreanCounts9, user_dectamilCounts9, user_decportugCounts9, 
+														user_decgermanCounts9, user_decotherCounts9);
+														
+		loadLanguagesCounts(10, 12, 1,user_decregionsLatLng10, user_decarabicCounts10, user_decenglishCounts10, user_decspanishCounts10, user_decturkishCounts10,
+														user_decindonesianCounts10, user_dectagalogCounts10, user_decfrenchCounts10, user_decpersianCounts10,
+														user_decurduCounts10, user_deckoreanCounts10, user_dectamilCounts10, user_decportugCounts10, 
+														user_decgermanCounts10, user_decotherCounts10);
+														
+		loadLanguagesCounts(11, 12, 1,user_decregionsLatLng11, user_decarabicCounts11, user_decenglishCounts11, user_decspanishCounts11, user_decturkishCounts11,
+														user_decindonesianCounts11, user_dectagalogCounts11, user_decfrenchCounts11, user_decpersianCounts11,
+														user_decurduCounts11, user_deckoreanCounts11, user_dectamilCounts11, user_decportugCounts11, 
+														user_decgermanCounts11, user_decotherCounts11);
+														
+		loadLanguagesCounts(12, 12, 1,user_decregionsLatLng12, user_decarabicCounts12, user_decenglishCounts12, user_decspanishCounts12, user_decturkishCounts12,
+														user_decindonesianCounts12, user_dectagalogCounts12, user_decfrenchCounts12, user_decpersianCounts12,
+														user_decurduCounts12, user_deckoreanCounts12, user_dectamilCounts12, user_decportugCounts12, 
+														user_decgermanCounts12, user_decotherCounts12);
+														
+		loadLanguagesCounts(13, 12, 1,user_decregionsLatLng13, user_decarabicCounts13, user_decenglishCounts13, user_decspanishCounts13, user_decturkishCounts13,
+														user_decindonesianCounts13, user_dectagalogCounts13, user_decfrenchCounts13, user_decpersianCounts13,
+														user_decurduCounts13, user_deckoreanCounts13, user_dectamilCounts13, user_decportugCounts13, 
+														user_decgermanCounts13, user_decotherCounts13);
+														
+		loadLanguagesCounts(14, 12, 1,user_decregionsLatLng14, user_decarabicCounts14, user_decenglishCounts14, user_decspanishCounts14, user_decturkishCounts14,
+														user_decindonesianCounts14, user_dectagalogCounts14, user_decfrenchCounts14, user_decpersianCounts14,
+														user_decurduCounts14, user_deckoreanCounts14, user_dectamilCounts14, user_decportugCounts14, user_decgermanCounts14, 
+														user_decotherCounts14);
+														
+		loadLanguagesCounts(15, 12, 1,user_decregionsLatLng15, user_decarabicCounts15, user_decenglishCounts15, user_decspanishCounts15, user_decturkishCounts15,
+														user_decindonesianCounts15, user_dectagalogCounts15, user_decfrenchCounts15, user_decpersianCounts15,
+														user_decurduCounts15, user_deckoreanCounts15, user_dectamilCounts15, user_decportugCounts15, 
+														user_decgermanCounts15, user_decotherCounts15);
+														
+	//Loading December Data
+        loadLanguagesCounts(4, 12, 0,decregionsLatLng4, decarabicCounts4, decenglishCounts4, decspanishCounts4, decturkishCounts4,
+														decindonesianCounts4, dectagalogCounts4, decfrenchCounts4, decpersianCounts4,
+														decurduCounts4, deckoreanCounts4, dectamilCounts4, decportugCounts4, decgermanCounts4, 
+														decotherCounts4);
+        
+		loadLanguagesCounts(5, 12, 0,decregionsLatLng5, decarabicCounts5, decenglishCounts5, decspanishCounts5, decturkishCounts5,
+														decindonesianCounts5, dectagalogCounts5, decfrenchCounts5, decpersianCounts5,
+														decurduCounts5, deckoreanCounts5, dectamilCounts5, decportugCounts5, decgermanCounts5, 
+														decotherCounts5);
+		
+		loadLanguagesCounts(6, 12, 0,decregionsLatLng6, decarabicCounts6, decenglishCounts6, decspanishCounts6, decturkishCounts6,
+														decindonesianCounts6, dectagalogCounts6, decfrenchCounts6, decpersianCounts6,
+														decurduCounts6, deckoreanCounts6, dectamilCounts6, decportugCounts6, decgermanCounts6, 
+														decotherCounts6);
+		
+		loadLanguagesCounts(7, 12, 0,decregionsLatLng7, decarabicCounts7, decenglishCounts7, decspanishCounts7, decturkishCounts7,
+														decindonesianCounts7, dectagalogCounts7, decfrenchCounts7, decpersianCounts7,
+														decurduCounts7, deckoreanCounts7, dectamilCounts7, decportugCounts7, decgermanCounts7, 
+														decotherCounts7);
+														
+		loadLanguagesCounts(8, 12, 0,decregionsLatLng8, decarabicCounts8, decenglishCounts8, decspanishCounts8, decturkishCounts8,
+														decindonesianCounts8, dectagalogCounts8, decfrenchCounts8, decpersianCounts8,
+														decurduCounts8, deckoreanCounts8, dectamilCounts8, decportugCounts8, decgermanCounts8, 
+														decotherCounts8);
+														
+		loadLanguagesCounts(9, 12, 0,decregionsLatLng9, decarabicCounts9, decenglishCounts9, decspanishCounts9, decturkishCounts9,
+														decindonesianCounts9, dectagalogCounts9, decfrenchCounts9, decpersianCounts9,
+														decurduCounts9, deckoreanCounts9, dectamilCounts9, decportugCounts9, decgermanCounts9, 
+														decotherCounts9);
+														
+		loadLanguagesCounts(10, 12, 0,decregionsLatLng10, decarabicCounts10, decenglishCounts10, decspanishCounts10, decturkishCounts10,
+														decindonesianCounts10, dectagalogCounts10, decfrenchCounts10, decpersianCounts10,
+														decurduCounts10, deckoreanCounts10, dectamilCounts10, decportugCounts10, decgermanCounts10, 
+														decotherCounts10);
+														
+		loadLanguagesCounts(11, 12, 0,decregionsLatLng11, decarabicCounts11, decenglishCounts11, decspanishCounts11, decturkishCounts11,
+														decindonesianCounts11, dectagalogCounts11, decfrenchCounts11, decpersianCounts11,
+														decurduCounts11, deckoreanCounts11, dectamilCounts11, decportugCounts11, decgermanCounts11, 
+														decotherCounts11);
+														
+		loadLanguagesCounts(12, 12, 0,decregionsLatLng12, decarabicCounts12, decenglishCounts12, decspanishCounts12, decturkishCounts12,
+														decindonesianCounts12, dectagalogCounts12, decfrenchCounts12, decpersianCounts12,
+														decurduCounts12, deckoreanCounts12, dectamilCounts12, decportugCounts12, decgermanCounts12, 
+														decotherCounts12);
+														
+		loadLanguagesCounts(13, 12, 0,decregionsLatLng13, decarabicCounts13, decenglishCounts13, decspanishCounts13, decturkishCounts13,
+														decindonesianCounts13, dectagalogCounts13, decfrenchCounts13, decpersianCounts13,
+														decurduCounts13, deckoreanCounts13, dectamilCounts13, decportugCounts13, decgermanCounts13, 
+														decotherCounts13);
+														
+		loadLanguagesCounts(14, 12, 0,decregionsLatLng14, decarabicCounts14, decenglishCounts14, decspanishCounts14, decturkishCounts14,
+														decindonesianCounts14, dectagalogCounts14, decfrenchCounts14, decpersianCounts14,
+														decurduCounts14, deckoreanCounts14, dectamilCounts14, decportugCounts14, decgermanCounts14, 
+														decotherCounts14);
+														
+		loadLanguagesCounts(15, 12, 0,decregionsLatLng15, decarabicCounts15, decenglishCounts15, decspanishCounts15, decturkishCounts15,
+														decindonesianCounts15, dectagalogCounts15, decfrenchCounts15, decpersianCounts15,
+														decurduCounts15, deckoreanCounts15, dectamilCounts15, decportugCounts15, decgermanCounts15, 
+														decotherCounts15);
+														
+														
+
+        //Loading January Data 
+		/*
+        loadFile(4, 1, 0,jandataTables4, janregionsLatLng4, janarabicCounts4);
+        loadFile(5, 1, 0,jandataTables5, janregionsLatLng5, janarabicCounts5);
+        loadFile(6, 1, 0,jandataTables6, janregionsLatLng6, janarabicCounts6);
+        loadFile(7, 1, 0,jandataTables7, janregionsLatLng7, janarabicCounts7);
+        loadFile(8, 1, 0,jandataTables8, janregionsLatLng8, janarabicCounts8);
+        loadFile(9, 1, 0,jandataTables9, janregionsLatLng9, janarabicCounts9);
+        loadFile(10, 1, 0,jandataTables10, janregionsLatLng10, janarabicCounts10);
+        loadFile(11, 1, 0,jandataTables11, janregionsLatLng11, janarabicCounts11);
+        loadFile(12, 1, 0,jandataTables12, janregionsLatLng12, janarabicCounts12);
+        loadFile(13, 1, 0,jandataTables13, janregionsLatLng13, janarabicCounts13);
+        loadFile(14, 1, 0,jandataTables14, janregionsLatLng14, janarabicCounts14);
+        loadFile(15, 1, 0,jandataTables15, janregionsLatLng15, janarabicCounts15);
+		
+		//Loading November USER Data
+        loadFile(4, 11, 1,user_novdataTables4, user_novregionsLatLng4, user_novarabicCounts4);
+        loadFile(5, 11, 1,user_novdataTables5, user_novregionsLatLng5, user_novarabicCounts5);
+        loadFile(6, 11, 1,user_novdataTables6, user_novregionsLatLng6, user_novarabicCounts6);
+        loadFile(7, 11, 1,user_novdataTables7, user_novregionsLatLng7, user_novarabicCounts7);
+        loadFile(8, 11, 1,user_novdataTables8, user_novregionsLatLng8, user_novarabicCounts8);
+        loadFile(9, 11, 1,user_novdataTables9, user_novregionsLatLng9, user_novarabicCounts9);
+        loadFile(10, 11, 1,user_novdataTables10, user_novregionsLatLng10, user_novarabicCounts10);
+        loadFile(11, 11, 1,user_novdataTables11, user_novregionsLatLng11, user_novarabicCounts11);
+        loadFile(12, 11, 1,user_novdataTables12, user_novregionsLatLng12, user_novarabicCounts12);
+        loadFile(13, 11, 1,user_novdataTables13, user_novregionsLatLng13, user_novarabicCounts13);
+        loadFile(14, 11, 1,user_novdataTables14, user_novregionsLatLng14, user_novarabicCounts14);
+        loadFile(15, 11, 1,user_novdataTables15, user_novregionsLatLng15, user_novarabicCounts15);
+
+        //Loading December USER Data
+        loadFile(4, 12, 1,user_decdataTables4, user_decregionsLatLng4, user_decarabicCounts4);
+        loadFile(5, 12, 1,user_decdataTables5, user_decregionsLatLng5, user_decarabicCounts5);
+        loadFile(6, 12, 1,user_decdataTables6, user_decregionsLatLng6, user_decarabicCounts6);
+        loadFile(7, 12, 1,user_decdataTables7, user_decregionsLatLng7, user_decarabicCounts7);
+        loadFile(8, 12, 1,user_decdataTables8, user_decregionsLatLng8, user_decarabicCounts8);
+        loadFile(9, 12, 1,user_decdataTables9, user_decregionsLatLng9, user_decarabicCounts9);
+        loadFile(10, 12, 1,user_decdataTables10, user_decregionsLatLng10, user_decarabicCounts10);
+        loadFile(11, 12, 1,user_decdataTables11, user_decregionsLatLng11, user_decarabicCounts11);
+        loadFile(12, 12, 1,user_decdataTables12, user_decregionsLatLng12, user_decarabicCounts12);
+        loadFile(13, 12, 1,user_decdataTables13, user_decregionsLatLng13, user_decarabicCounts13);
+        loadFile(14, 12, 1,user_decdataTables14, user_decregionsLatLng14, user_decarabicCounts14);
+        loadFile(15, 12, 1,user_decdataTables15, user_decregionsLatLng15, user_decarabicCounts15);
+
+		//Loading January User Data 
+        loadFile(4, 1, 1,user_jandataTables4, user_janregionsLatLng4, user_janarabicCounts4);
+        loadFile(5, 1, 1,user_jandataTables5, user_janregionsLatLng5, user_janarabicCounts5);
+        loadFile(6, 1, 1,user_jandataTables6, user_janregionsLatLng6, user_janarabicCounts6);
+        loadFile(7, 1, 1,user_jandataTables7, user_janregionsLatLng7, user_janarabicCounts7);
+        loadFile(8, 1, 1,user_jandataTables8, user_janregionsLatLng8, user_janarabicCounts8);
+        loadFile(9, 1, 1,user_jandataTables9, user_janregionsLatLng9, user_janarabicCounts9);
+        loadFile(10, 1, 1,user_jandataTables10, user_janregionsLatLng10, user_janarabicCounts10);
+        loadFile(11, 1, 1,user_jandataTables11, user_janregionsLatLng11, user_janarabicCounts11);
+        loadFile(12, 1, 1,user_jandataTables12, user_janregionsLatLng12, user_janarabicCounts12);
+        loadFile(13, 1, 1,user_jandataTables13, user_janregionsLatLng13, user_janarabicCounts13);
+        loadFile(14, 1, 1,user_jandataTables14, user_janregionsLatLng14, user_janarabicCounts14);
+        loadFile(15, 1, 1,user_jandataTables15, user_janregionsLatLng15, user_janarabicCounts15);
+		*/
+
+
+
+        var numRegions;
+		var numLanguages;
+		var numLanguages;
+        var zoomLevel = 7;
+		var fileName;
+        var stepX;
+        var stepY;
+        var circleSize;
+        var mapCenter = new google.maps.LatLng(25, 45);
+        var lat1 = 17;
+        var lat2 = 30;
+        var lng1 = 38;
+        var lng2 = 52;
+        var currMonth = 12;
+
+        var markersArr = [];
+        var markers = [];
+
+
+
+        function initialize() {
+            map = new google.maps.Map($('#map_canvas')[0], {
+                zoom: zoomLevel,
+                minZoom: 4,
+                maxZoom: 15,
+                center: mapCenter,
+                panControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+
+
+            google.maps.event.addListener(map, 'idle', function () {
+                mapCenter = map.getCenter();
+                zoomLevel = map.getZoom();
+                var bounds = map.getBounds();
+                //alert('Zoom detected '+zoomLevel+' '+numRegions);			
+                //alert('Map center '+mapCenter);
+                //alert('Map bounds '+bounds);
+                lat1 = bounds.getSouthWest().lat();
+                lat2 = bounds.getNorthEast().lat();
+                lng1 = bounds.getSouthWest().lng();
+                lng2 = bounds.getNorthEast().lng();
+                //clearCharts();
+                //alert('zoom '+lat1);
+                if (zoomLevel > 3 && zoomLevel <= 15) {
+                    drawLang();
+                }
+            });
+
+
+            // Create the search box and link it to the UI element.
+            var input = (document.getElementById('pac-input'));
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+            var searchBox = new google.maps.places.SearchBox(input);
+
+            // Listen for the event fired when the user selects an item from the
+            // pick list. Retrieve the matching places for that item.
+            google.maps.event.addListener(searchBox, 'places_changed', function () {
+                var places = searchBox.getPlaces();
+
+                for (var i = 0, marker; marker = markers[i]; i++) {
+                    marker.setMap(null);
+                }
+
+                // For each place, get the icon, place name, and location.
+                markers = [];
+                var bounds = new google.maps.LatLngBounds();
+                for (var i = 0, place; place = places[i]; i++) {
+                    var image = {
+                        url: place.icon,
+                        size: new google.maps.Size(71, 71),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(17, 34),
+                        scaledSize: new google.maps.Size(25, 25)
+                    };
+
+                    // Create a marker for each place.
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        icon: image,
+                        title: place.name,
+                        position: place.geometry.location
+                    });
+
+                    markers.push(marker);
+                    bounds.extend(place.geometry.location);
+                }
+
+                map.fitBounds(bounds);
+            });
+
+            // Bias the SearchBox results towards places that are within the bounds of the
+            // current map's viewport.
+            google.maps.event.addListener(map, 'bounds_changed', function () {
+                var bounds = map.getBounds();
+                searchBox.setBounds(bounds);
+            });
+
+            drawLang();
+        }
+
+        function changeMonth() {
+            if (month.selectedIndex == 0) {
+                currMonth = 11;
+            }
+            else if (month.selectedIndex == 1) {
+                currMonth = 12;
+            }
+            else {
+                currMonth = 1;
+            }
+
+            draw();
+        }
+
+		
+        var countUsers=false; //initilized to count tweets
+		function processUserCounts(isCountUsers)
+        {
+		    if (isCountUsers) {
+		        countUsers = true;
+		        $("#countUsersBtn").addClass("active");
+		        $("#countTweetsBtn").removeClass("active");
+		    } else {
+		        countUsers = false;
+		        $("#countUsersBtn").removeClass("active");
+		        $("#countTweetsBtn").addClass("active");
+		    }
+
+			drawLang();
+		}
+		
+        
+		function drawLang()
+		{
+		
+				
+				var pos = 0;
+				numLanguages = 0;
+				
+				var colors = [] ;
+
+				
+				var arabicCounts = [];
+				var englishCounts = [];
+				var spanishCounts = [];
+				var turkishCounts = [];
+				var indonesianCounts = [];
+				var tagalogCounts = [];
+				var frenchCounts = [];
+				var persianCounts = [];
+				var urduCounts = [];
+				var koreanCounts = [];
+				var tamilCounts = [];
+				var germanCounts = [];
+				var portugueseCounts = [];
+				var otherCounts = [];
+				
+				
+				if (arabic.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#ED561B';
+					pos++;
+				}
+				
+				if(english.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#3366cc';
+					pos++;
+				}
+				
+				if(spanish.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#55d7d7';
+					pos++;
+				}
+				
+				if(turkish.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#dc3912';
+					pos++;
+				}
+				
+				if(indonesian.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#ff9900';
+					pos++;
+				}
+				
+				if(tagalog.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#109618';
+					pos++;
+				}
+				
+				if(french.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#990099';
+					pos++;
+				}
+				if (persian.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#9e7151';
+					pos++;
+				}
+				
+				if(urdu.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#a9a9a9';
+					pos++;
+				}
+				if(korean.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#fcf357';
+					pos++;
+				}
+				
+				if(tamil.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#22aa99';
+					pos++;
+				}
+				
+				if(portuguese.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#943634';
+					pos++;
+				}
+				
+				if(german.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#7e55fc';
+					pos++;
+				}
+				/*
+				if(other.checked)
+				{
+					numLanguages++;
+					colors[pos] = '#e14fge';
+					pos++;
+				}
+				*/
+				
+				
+				if (zoomLevel == 4)
+				{
+					
+					stepX = 10;
+					stepY = 10;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng4.length;
+						regionsLatLng = user_decregionsLatLng4;
+					
+						arabicCounts = user_decarabicCounts4;
+						englishCounts = user_decenglishCounts4;
+						spanishCounts = user_decspanishCounts4;
+						turkishCounts = user_decturkishCounts4;
+						indonesianCounts = user_decindonesianCounts4;
+						tagalogCounts = user_dectagalogCounts4;
+						frenchCounts = user_decfrenchCounts4;
+						persianCounts = user_decpersianCounts4;
+						urduCounts = user_decurduCounts4;
+						koreanCounts = user_deckoreanCounts4;
+						tamilCounts = user_dectamilCounts4;
+						germanCounts = user_decgermanCounts4;
+						portugueseCounts = user_decportugCounts4;
+						otherCounts = user_decotherCounts4;
+					
+					}
+					else{
+					
+						numRegions = decregionsLatLng4.length;
+						regionsLatLng = decregionsLatLng4;
+					
+						arabicCounts = decarabicCounts4;
+						englishCounts = decenglishCounts4;
+						spanishCounts = decspanishCounts4;
+						turkishCounts = decturkishCounts4;
+						indonesianCounts = decindonesianCounts4;
+						tagalogCounts = dectagalogCounts4;
+						frenchCounts = decfrenchCounts4;
+						persianCounts = decpersianCounts4;
+						urduCounts = decurduCounts4;
+						koreanCounts = deckoreanCounts4;
+						tamilCounts = dectamilCounts4;
+						germanCounts = decgermanCounts4;
+						portugueseCounts = decportugCounts4;
+						otherCounts = decotherCounts4;
+					}
+				}
+				else if (zoomLevel == 5)
+				{
+					
+					stepX = 2.5;
+					stepY = 2.25;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng5.length;
+						regionsLatLng = user_decregionsLatLng5;
+					
+						arabicCounts = user_decarabicCounts5;
+						englishCounts = user_decenglishCounts5;
+						spanishCounts = user_decspanishCounts5;
+						turkishCounts = user_decturkishCounts5;
+						indonesianCounts = user_decindonesianCounts5;
+						tagalogCounts = user_dectagalogCounts5;
+						frenchCounts = user_decfrenchCounts5;
+						persianCounts = user_decpersianCounts5;
+						urduCounts = user_decurduCounts5;
+						koreanCounts = user_deckoreanCounts5;
+						tamilCounts = user_dectamilCounts5;
+						germanCounts = user_decgermanCounts5;
+						portugueseCounts = user_decportugCounts5;
+						otherCounts = user_decotherCounts5;
+					
+					}
+					else
+					{
+						numRegions = decregionsLatLng5.length;
+						regionsLatLng = decregionsLatLng5;
+					
+						arabicCounts = decarabicCounts5;
+						englishCounts = decenglishCounts5;
+						spanishCounts = decspanishCounts5;
+						turkishCounts = decturkishCounts5;
+						indonesianCounts = decindonesianCounts5;
+						tagalogCounts = dectagalogCounts5;
+						frenchCounts = decfrenchCounts5;
+						persianCounts = decpersianCounts5;
+						urduCounts = decurduCounts5;
+						koreanCounts = deckoreanCounts5;
+						tamilCounts = dectamilCounts5;
+						germanCounts = decgermanCounts5;
+						portugueseCounts = decportugCounts5;
+						otherCounts = decotherCounts5;
+					}
+				}
+				else if (zoomLevel == 6)
+				{
+					
+					stepX = 1;
+					stepY = 1.4;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng6.length;
+						regionsLatLng = user_decregionsLatLng6;
+					
+						arabicCounts = user_decarabicCounts6;
+						englishCounts = user_decenglishCounts6;
+						spanishCounts = user_decspanishCounts6;
+						turkishCounts = user_decturkishCounts6;
+						indonesianCounts = user_decindonesianCounts6;
+						tagalogCounts = user_dectagalogCounts6;
+						frenchCounts = user_decfrenchCounts6;
+						persianCounts = user_decpersianCounts6;
+						urduCounts = user_decurduCounts6;
+						koreanCounts = user_deckoreanCounts6;
+						tamilCounts = user_dectamilCounts6;
+						germanCounts = user_decgermanCounts6;
+						portugueseCounts = user_decportugCounts6;
+						otherCounts = user_decotherCounts6;
+					}
+					else
+					{
+					
+						numRegions = decregionsLatLng6.length;
+						regionsLatLng = decregionsLatLng6;
+					
+						arabicCounts = decarabicCounts6;
+						englishCounts = decenglishCounts6;
+						spanishCounts = decspanishCounts6;
+						turkishCounts = decturkishCounts6;
+						indonesianCounts = decindonesianCounts6;
+						tagalogCounts = dectagalogCounts6;
+						frenchCounts = decfrenchCounts6;
+						persianCounts = decpersianCounts6;
+						urduCounts = decurduCounts6;
+						koreanCounts = deckoreanCounts6;
+						tamilCounts = dectamilCounts6;
+						germanCounts = decgermanCounts6;
+						portugueseCounts = decportugCounts6;
+						otherCounts = decotherCounts6;
+					}
+				}
+				else if (zoomLevel == 7)
+				{
+					stepX = 0.5;
+					stepY = 0.7;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng7.length;
+						regionsLatLng = user_decregionsLatLng7;
+					
+						arabicCounts = user_decarabicCounts7;
+						englishCounts = user_decenglishCounts7;
+						spanishCounts = user_decspanishCounts7;
+						turkishCounts = user_decturkishCounts7;
+						indonesianCounts = user_decindonesianCounts7;
+						tagalogCounts = user_dectagalogCounts7;
+						frenchCounts = user_decfrenchCounts7;
+						persianCounts = user_decpersianCounts7;
+						urduCounts = user_decurduCounts7;
+						koreanCounts = user_deckoreanCounts7;
+						tamilCounts = user_dectamilCounts7;
+						germanCounts = user_decgermanCounts7;
+						portugueseCounts = user_decportugCounts7;
+						otherCounts = user_decotherCounts7;
+					}
+					else
+					{
+					
+						numRegions = decregionsLatLng7.length;
+						regionsLatLng = decregionsLatLng7;
+					
+						arabicCounts = decarabicCounts7;
+						englishCounts = decenglishCounts7;
+						spanishCounts = decspanishCounts7;
+						turkishCounts = decturkishCounts7;
+						indonesianCounts = decindonesianCounts7;
+						tagalogCounts = dectagalogCounts7;
+						frenchCounts = decfrenchCounts7;
+						persianCounts = decpersianCounts7;
+						urduCounts = decurduCounts7;
+						koreanCounts = deckoreanCounts7;
+						tamilCounts = dectamilCounts7;
+						germanCounts = decgermanCounts7;
+						portugueseCounts = decportugCounts7;
+						otherCounts = decotherCounts7;
+					}
+				}
+				else if (zoomLevel == 8)
+				{
+					
+					stepX = 0.25;
+					stepY = 0.3;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng8.length;
+						regionsLatLng = user_decregionsLatLng8;
+					
+						arabicCounts = user_decarabicCounts8;
+						englishCounts = user_decenglishCounts8;
+						spanishCounts = user_decspanishCounts8;
+						turkishCounts = user_decturkishCounts8;
+						indonesianCounts = user_decindonesianCounts8;
+						tagalogCounts = user_dectagalogCounts8;
+						frenchCounts = user_decfrenchCounts8;
+						persianCounts = user_decpersianCounts8;
+						urduCounts = user_decurduCounts8;
+						koreanCounts = user_deckoreanCounts8;
+						tamilCounts = user_dectamilCounts8;
+						germanCounts = user_decgermanCounts8;
+						portugueseCounts = user_decportugCounts8;
+						otherCounts = user_decotherCounts8;
+					}
+					else
+					{
+						numRegions = decregionsLatLng8.length;
+						regionsLatLng = decregionsLatLng8;
+					
+						arabicCounts = decarabicCounts8;
+						englishCounts = decenglishCounts8;
+						spanishCounts = decspanishCounts8;
+						turkishCounts = decturkishCounts8;
+						indonesianCounts = decindonesianCounts8;
+						tagalogCounts = dectagalogCounts8;
+						frenchCounts = decfrenchCounts8;
+						persianCounts = decpersianCounts8;
+						urduCounts = decurduCounts8;
+						koreanCounts = deckoreanCounts8;
+						tamilCounts = dectamilCounts8;
+						germanCounts = decgermanCounts8;
+						portugueseCounts = decportugCounts8;
+						otherCounts = decotherCounts8;
+					}
+				}
+				else if (zoomLevel == 9)
+				{
+					
+					stepX = 0.25;
+					stepY = 0.15;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng9.length;
+						regionsLatLng = user_decregionsLatLng9;
+					
+						arabicCounts = user_decarabicCounts9;
+						englishCounts = user_decenglishCounts9;
+						spanishCounts = user_decspanishCounts9;
+						turkishCounts = user_decturkishCounts9;
+						indonesianCounts = user_decindonesianCounts9;
+						tagalogCounts = user_dectagalogCounts9;
+						frenchCounts = user_decfrenchCounts9;
+						persianCounts = user_decpersianCounts9;
+						urduCounts = user_decurduCounts9;
+						koreanCounts = user_deckoreanCounts9;
+						tamilCounts = user_dectamilCounts9;
+						germanCounts = user_decgermanCounts9;
+						portugueseCounts = user_decportugCounts9;
+						otherCounts = user_decotherCounts9;
+					}
+					else
+					{
+						numRegions = decregionsLatLng9.length;
+						regionsLatLng = decregionsLatLng9;
+					
+						arabicCounts = decarabicCounts9;
+						englishCounts = decenglishCounts9;
+						spanishCounts = decspanishCounts9;
+						turkishCounts = decturkishCounts9;
+						indonesianCounts = decindonesianCounts9;
+						tagalogCounts = dectagalogCounts9;
+						frenchCounts = decfrenchCounts9;
+						persianCounts = decpersianCounts9;
+						urduCounts = decurduCounts9;
+						koreanCounts = deckoreanCounts9;
+						tamilCounts = dectamilCounts9;
+						germanCounts = decgermanCounts9;
+						portugueseCounts = decportugCounts9;
+						otherCounts = decotherCounts9;
+					}
+				}else if (zoomLevel == 10)
+				{
+					
+					stepX = 0.1;
+					stepY = 0.06;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng10.length;
+						regionsLatLng = user_decregionsLatLng10;
+					
+						arabicCounts = user_decarabicCounts10;
+						englishCounts = user_decenglishCounts10;
+						spanishCounts = user_decspanishCounts10;
+						turkishCounts = user_decturkishCounts10;
+						indonesianCounts = user_decindonesianCounts10;
+						tagalogCounts = user_dectagalogCounts10;
+						frenchCounts = user_decfrenchCounts10;
+						persianCounts = user_decpersianCounts10;
+						urduCounts = user_decurduCounts10;
+						koreanCounts = user_deckoreanCounts10;
+						tamilCounts = user_dectamilCounts10;
+						germanCounts = user_decgermanCounts10;
+						portugueseCounts = user_decportugCounts10;
+						otherCounts = user_decotherCounts10;
+					}
+					else
+					{
+					
+						numRegions = decregionsLatLng10.length;
+						regionsLatLng = decregionsLatLng10;
+					
+						arabicCounts = decarabicCounts10;
+						englishCounts = decenglishCounts10;
+						spanishCounts = decspanishCounts10;
+						turkishCounts = decturkishCounts10;
+						indonesianCounts = decindonesianCounts10;
+						tagalogCounts = dectagalogCounts10;
+						frenchCounts = decfrenchCounts10;
+						persianCounts = decpersianCounts10;
+						urduCounts = decurduCounts10;
+						koreanCounts = deckoreanCounts10;
+						tamilCounts = dectamilCounts10;
+						germanCounts = decgermanCounts10;
+						portugueseCounts = decportugCounts10;
+						otherCounts = decotherCounts10;
+					}
+				}else if (zoomLevel == 11)
+				{
+					
+					stepX = 0.05;
+					stepY = 0.05;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng11.length;
+						regionsLatLng = user_decregionsLatLng11;
+					
+						arabicCounts = user_decarabicCounts11;
+						englishCounts = user_decenglishCounts11;
+						spanishCounts = user_decspanishCounts11;
+						turkishCounts = user_decturkishCounts11;
+						indonesianCounts = user_decindonesianCounts11;
+						tagalogCounts = user_dectagalogCounts11;
+						frenchCounts = user_decfrenchCounts11;
+						persianCounts = user_decpersianCounts11;
+						urduCounts = user_decurduCounts11;
+						koreanCounts = user_deckoreanCounts11;
+						tamilCounts = user_dectamilCounts11;
+						germanCounts = user_decgermanCounts11;
+						portugueseCounts = user_decportugCounts11;
+						otherCounts = user_decotherCounts11;
+					}
+					else
+					{
+					
+						numRegions = decregionsLatLng11.length;
+						regionsLatLng = decregionsLatLng11;
+					
+						arabicCounts = decarabicCounts11;
+						englishCounts = decenglishCounts11;
+						spanishCounts = decspanishCounts11;
+						turkishCounts = decturkishCounts11;
+						indonesianCounts = decindonesianCounts11;
+						tagalogCounts = dectagalogCounts11;
+						frenchCounts = decfrenchCounts11;
+						persianCounts = decpersianCounts11;
+						urduCounts = decurduCounts11;
+						koreanCounts = deckoreanCounts11;
+						tamilCounts = dectamilCounts11;
+						germanCounts = decgermanCounts11;
+						portugueseCounts = decportugCounts11;
+						otherCounts = decotherCounts11;
+					}
+				}else if (zoomLevel == 12)
+				{
+					
+					stepX = 0.025;
+					stepY = 0.02;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng12.length;
+						regionsLatLng = user_decregionsLatLng12;
+					
+						arabicCounts = user_decarabicCounts12;
+						englishCounts = user_decenglishCounts12;
+						spanishCounts = user_decspanishCounts12;
+						turkishCounts = user_decturkishCounts12;
+						indonesianCounts = user_decindonesianCounts12;
+						tagalogCounts = user_dectagalogCounts12;
+						frenchCounts = user_decfrenchCounts12;
+						persianCounts = user_decpersianCounts12;
+						urduCounts = user_decurduCounts12;
+						koreanCounts = user_deckoreanCounts12;
+						tamilCounts = user_dectamilCounts12;
+						germanCounts = user_decgermanCounts12;
+						portugueseCounts = user_decportugCounts12;
+						otherCounts = user_decotherCounts12;
+					}
+					else
+					{
+					
+						numRegions = decregionsLatLng12.length;
+						regionsLatLng = decregionsLatLng12;
+					
+						arabicCounts = decarabicCounts12;
+						englishCounts = decenglishCounts12;
+						spanishCounts = decspanishCounts12;
+						turkishCounts = decturkishCounts12;
+						indonesianCounts = decindonesianCounts12;
+						tagalogCounts = dectagalogCounts12;
+						frenchCounts = decfrenchCounts12;
+						persianCounts = decpersianCounts12;
+						urduCounts = decurduCounts12;
+						koreanCounts = deckoreanCounts12;
+						tamilCounts = dectamilCounts12;
+						germanCounts = decgermanCounts12;
+						portugueseCounts = decportugCounts12;
+						otherCounts = decotherCounts12;
+					}
+				}else if (zoomLevel == 13)
+				{
+					
+					stepX = 0.01;
+					stepY = 0.007;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng13.length;
+						regionsLatLng = user_decregionsLatLng13;
+					
+						arabicCounts = user_decarabicCounts13;
+						englishCounts = user_decenglishCounts13;
+						spanishCounts = user_decspanishCounts13;
+						turkishCounts = user_decturkishCounts13;
+						indonesianCounts = user_decindonesianCounts13;
+						tagalogCounts = user_dectagalogCounts13;
+						frenchCounts = user_decfrenchCounts13;
+						persianCounts = user_decpersianCounts13;
+						urduCounts = user_decurduCounts13;
+						koreanCounts = user_deckoreanCounts13;
+						tamilCounts = user_dectamilCounts13;
+						germanCounts = user_decgermanCounts13;
+						portugueseCounts = user_decportugCounts13;
+						otherCounts = user_decotherCounts13;
+					}
+					else
+					{
+					
+						numRegions = decregionsLatLng13.length;
+						regionsLatLng = decregionsLatLng13;
+					
+						arabicCounts = decarabicCounts13;
+						englishCounts = decenglishCounts13;
+						spanishCounts = decspanishCounts13;
+						turkishCounts = decturkishCounts13;
+						indonesianCounts = decindonesianCounts13;
+						tagalogCounts = dectagalogCounts13;
+						frenchCounts = decfrenchCounts13;
+						persianCounts = decpersianCounts13;
+						urduCounts = decurduCounts13;
+						koreanCounts = deckoreanCounts13;
+						tamilCounts = dectamilCounts13;
+						germanCounts = decgermanCounts13;
+						portugueseCounts = decportugCounts13;
+						otherCounts = decotherCounts13;
+					}
+				}else if (zoomLevel == 14)
+				{
+					
+					stepX = 0.005;
+					stepY = 0.0025;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng14.length;
+						regionsLatLng = user_decregionsLatLng14;
+					
+						arabicCounts = user_decarabicCounts14;
+						englishCounts = user_decenglishCounts14;
+						spanishCounts = user_decspanishCounts14;
+						turkishCounts = user_decturkishCounts14;
+						indonesianCounts = user_decindonesianCounts14;
+						tagalogCounts = user_dectagalogCounts14;
+						frenchCounts = user_decfrenchCounts14;
+						persianCounts = user_decpersianCounts14;
+						urduCounts = user_decurduCounts14;
+						koreanCounts = user_deckoreanCounts14;
+						tamilCounts = user_dectamilCounts14;
+						germanCounts = user_decgermanCounts14;
+						portugueseCounts = user_decportugCounts14;
+						otherCounts = user_decotherCounts14;
+					}
+					else
+					{
+					
+						numRegions = decregionsLatLng14.length;
+						regionsLatLng = decregionsLatLng14;
+					
+						arabicCounts = decarabicCounts14;
+						englishCounts = decenglishCounts14;
+						spanishCounts = decspanishCounts14;
+						turkishCounts = decturkishCounts14;
+						indonesianCounts = decindonesianCounts14;
+						tagalogCounts = dectagalogCounts14;
+						frenchCounts = decfrenchCounts14;
+						persianCounts = decpersianCounts14;
+						urduCounts = decurduCounts14;
+						koreanCounts = deckoreanCounts14;
+						tamilCounts = dectamilCounts14;
+						germanCounts = decgermanCounts14;
+						portugueseCounts = decportugCounts14;
+						otherCounts = decotherCounts14;
+					}
+				}else if (zoomLevel == 15)
+				{
+					
+					stepX = 0.0025;
+					stepY = 0.002;
+					circleSize = 30;
+					
+					if (countUsers)
+					{
+						numRegions = user_decregionsLatLng15.length;
+						regionsLatLng = user_decregionsLatLng15;
+					
+						arabicCounts = user_decarabicCounts15;
+						englishCounts = user_decenglishCounts15;
+						spanishCounts = user_decspanishCounts15;
+						turkishCounts = user_decturkishCounts15;
+						indonesianCounts = user_decindonesianCounts15;
+						tagalogCounts = user_dectagalogCounts15;
+						frenchCounts = user_decfrenchCounts15;
+						persianCounts = user_decpersianCounts15;
+						urduCounts = user_decurduCounts15;
+						koreanCounts = user_deckoreanCounts15;
+						tamilCounts = user_dectamilCounts15;
+						germanCounts = user_decgermanCounts15;
+						portugueseCounts = user_decportugCounts15;
+						otherCounts = user_decotherCounts15;
+					}
+					else
+					{
+					
+						numRegions = decregionsLatLng15.length;
+						regionsLatLng = decregionsLatLng15;
+					
+						arabicCounts = decarabicCounts15;
+						englishCounts = decenglishCounts15;
+						spanishCounts = decspanishCounts15;
+						turkishCounts = decturkishCounts15;
+						indonesianCounts = decindonesianCounts15;
+						tagalogCounts = dectagalogCounts15;
+						frenchCounts = decfrenchCounts15;
+						persianCounts = decpersianCounts15;
+						urduCounts = decurduCounts15;
+						koreanCounts = deckoreanCounts15;
+						tamilCounts = dectamilCounts15;
+						germanCounts = decgermanCounts15;
+						portugueseCounts = decportugCounts15;
+						otherCounts = decotherCounts15;
+					}
+				}
+				
+				
+				
+				
+				
+				for (var i = 0; i < numRegions; i++) {
+
+
+                        decdataTables[i] = new google.visualization.DataTable();
+                        decdataTables[i].addColumn('string', 'Language');
+                        decdataTables[i].addColumn('number', 'Number of Tweets');
+						
+						if (arabic.checked)
+							decdataTables[i].addRow(['Arabic', arabicCounts[i]]);
+							//decdataTables7[i].addRow(['Arabic', decarabicCounts7[i]]);
+								
+						if (english.checked)
+							decdataTables[i].addRow(['English', englishCounts[i]]);
+					
+						if (spanish.checked)
+							decdataTables[i].addRow(['Spanish', spanishCounts[i]]);
+							
+						if (turkish.checked)
+							decdataTables[i].addRow(['Turkish', turkishCounts[i]]);
+						
+						if (indonesian.checked)
+							decdataTables[i].addRow(['Indonesian', indonesianCounts[i]]);
+						
+						if (tagalog.checked)
+							decdataTables[i].addRow(['Tagalog', tagalogCounts[i]]);
+						
+						if (french.checked)
+							decdataTables[i].addRow(['French', frenchCounts[i]]);
+						
+						if (persian.checked)
+							decdataTables[i].addRow(['Persian', persianCounts[i]]);
+							
+						if (urdu.checked)
+							decdataTables[i].addRow(['Urdu', urduCounts[i]]);
+						
+						if (korean.checked)
+							decdataTables[i].addRow(['Korean', koreanCounts[i]]);
+							
+						if (tamil.checked)
+							decdataTables[i].addRow(['Tamil', tamilCounts[i]]);
+						
+						if (portuguese.checked)
+							decdataTables[i].addRow(['Portuguese', portugueseCounts[i]]);
+							
+						if (german.checked)
+							decdataTables[i].addRow(['Geman', germanCounts[i]]);
+						
+						//if (other.checked)
+							//decdataTables[i].addRow(['Other', otherCounts[i]]);
+				}
+				
+				drawCharts(decdataTables, regionsLatLng,colors);
+				
+				//checkall.checked = false;
+				//checknone.checked = false;
+				
+		
+		}
+
+        //mood = 1 ==> intialize the inbounds array, mood = 0 ==> do not change the inbounds array
+        function draw() {
+		
+			
+            if (zoomLevel == 4) {
+                stepX = 10;
+                stepY = 10;
+                circleSize = 40;
+				
+				
+				
+                if (currMonth == 11) {
+					if (countUsers)
+					{
+						numRegions = user_novdataTables4.length;
+						drawCharts(user_novdataTables4, user_novregionsLatLng4);
+					}
+					else
+					{
+						numRegions = novdataTables4.length;
+						drawCharts(novdataTables4, novregionsLatLng4);
+					}
+                }
+                else if (currMonth == 12) {
+					if (countUsers)
+					{
+						numRegions = user_decdataTables4.length;
+						drawCharts(user_decdataTables4, user_decregionsLatLng4);
+					}
+					else
+					{
+						numRegions = decdataTables4.length;
+						drawCharts(decdataTables4, decregionsLatLng4);
+					}
+                }
+                else {
+					if (countUsers)
+					{
+						numRegions = user_jandataTables4.length;
+						drawCharts(user_jandataTables4, user_janregionsLatLng4);
+					}
+					else
+					{
+						numRegions = jandataTables4.length;
+						drawCharts(jandataTables4, janregionsLatLng4);
+					}
+                }
+
+            }
+
+            else if (zoomLevel == 5) {
+                stepX = 2.5;
+                stepY = 2.25;
+                circleSize = 30;
+
+				mintotal = 0;
+				factor = 0;
+				limit = 0;
+				addfactor = 0;
+				
+				if (countUsers)
+				{
+					if (currMonth == 11) {
+						numRegions = user_novdataTables5.length;
+						drawCharts(user_novdataTables5, user_novregionsLatLng5);
+					}
+					else if (currMonth == 12) {
+						numRegions = user_decdataTables5.length;
+						drawCharts(user_decdataTables5, user_decregionsLatLng5);
+					}
+					else {
+						numRegions = user_jandataTables5.length;
+						drawCharts(user_jandataTables5, user_janregionsLatLng5);
+					}
+				}
+				else
+				{
+					
+					if (currMonth == 11) {
+						numRegions = novdataTables5.length;
+						drawCharts(novdataTables5, novregionsLatLng5);
+					}
+					else if (currMonth == 12) {
+						numRegions = decdataTables5.length;
+						drawCharts(decdataTables5, decregionsLatLng5);
+					}
+					else {
+						numRegions = jandataTables5.length;
+						drawCharts(jandataTables5, janregionsLatLng5);
+					}
+				}
+
+            }
+            else if (zoomLevel == 6) {
+                stepX = 1;
+                stepY = 1.4;
+                circleSize = 30;
+				
+				mintotal = 0;
+				factor = 0;
+				limit = 0;
+				addfactor = 0;
+
+				if (countUsers)
+				{
+					if (currMonth == 11) {
+						numRegions = user_novdataTables6.length;
+						drawCharts(user_novdataTables6, user_novregionsLatLng6);
+					}
+					else if (currMonth == 12) {
+						numRegions = user_decdataTables6.length;
+						drawCharts(user_decdataTables6, user_decregionsLatLng6);
+					}
+					else {
+						numRegions = user_jandataTables6.length;
+						drawCharts(user_jandataTables6, user_janregionsLatLng6);
+					}
+				}
+				else
+				{
+					if (currMonth == 11) {
+						numRegions = novdataTables6.length;
+						drawCharts(novdataTables6, novregionsLatLng6);
+					}
+					else if (currMonth == 12) {
+						numRegions = decdataTables6.length;
+						drawCharts(decdataTables6, decregionsLatLng6);
+					}
+					else {
+						numRegions = jandataTables6.length;
+						drawCharts(jandataTables6, janregionsLatLng6);
+					}
+				}
+
+            }
+
+            else if (zoomLevel == 7) {
+				
+                stepX = 0.5;
+                stepY = 0.7;
+                circleSize = 30;
+				
+				if (arabic.checked)
+				{
+					if (countUsers)
+						factor = 100;
+					else
+						factor = 2000;
+				}
+				else
+					factor = 100;
+				
+				if (countUsers)
+				{
+					if (currMonth == 11) {
+						numRegions = user_novdataTables7.length;
+						drawCharts(user_novdataTables7, user_novregionsLatLng7);
+					}
+					else if (currMonth == 12) {
+						numRegions = user_decdataTables7.length;
+						drawCharts(user_decdataTables7, user_decregionsLatLng7);
+					}
+					else {
+						numRegions = user_jandataTables7.length;
+						drawCharts(user_jandataTables7, user_janregionsLatLng7);
+					}
+				}
+				else
+				{
+					if (currMonth == 11) {
+						numRegions = novdataTables7.length;
+						drawCharts(novdataTables7, novregionsLatLng7);
+					}
+					else if (currMonth == 12) {
+						numRegions = decdataTables7.length;
+						drawCharts(decdataTables7, decregionsLatLng7);
+					}
+					else {
+						numRegions = jandataTables7.length;
+						drawCharts(jandataTables7, janregionsLatLng7);
+					}
+				}
+            }
+            else if (zoomLevel == 8) {
+                stepX = 0.25;
+                stepY = 0.3;
+                circleSize = 30;
+				
+				mintotal = 15;
+				factor = 100;
+				
+				
+				if (countUsers)
+				{
+					if (currMonth == 11) {
+						numRegions = user_novdataTables8.length;
+						drawCharts(user_novdataTables8, user_novregionsLatLng8);
+					}
+					else if (currMonth == 12) {
+						numRegions = user_decdataTables8.length;
+						drawCharts(user_decdataTables8, user_decregionsLatLng8);
+					}
+					else {
+						numRegions = user_jandataTables8.length;
+						drawCharts(user_jandataTables8, user_janregionsLatLng8);
+					}
+				}
+				else
+				{
+					if (currMonth == 11) {
+						numRegions = novdataTables8.length;
+						drawCharts(novdataTables8, novregionsLatLng8);
+					}
+					else if (currMonth == 12) {
+						numRegions = decdataTables8.length;
+						drawCharts(decdataTables8, decregionsLatLng8);
+					}
+					else {
+						numRegions = jandataTables8.length;
+						drawCharts(jandataTables8, janregionsLatLng8);
+					}
+				}
+            }
+            else if (zoomLevel == 9) {
+                stepX = 0.25;
+                stepY = 0.15;
+                circleSize = 30;
+				
+				mintotal = 0;
+				factor = 0;
+				limit = 0;
+				addfactor = 0;
+				
+				if (countUsers)
+				{
+					if (currMonth == 11) {
+						numRegions = user_novdataTables9.length;
+						drawCharts(user_novdataTables9, user_novregionsLatLng9);
+					}
+					else if (currMonth == 12) {
+						numRegions = user_decdataTables9.length;
+						drawCharts(user_decdataTables9, user_decregionsLatLng9);
+					}
+					else {
+						numRegions = user_jandataTables9.length;
+						drawCharts(user_jandataTables9, user_janregionsLatLng9);
+					}
+				}
+				else
+				{
+					
+					if (currMonth == 11) {
+						numRegions = novdataTables9.length;
+						drawCharts(novdataTables9, novregionsLatLng9);
+					}
+					else if (currMonth == 12) {
+						numRegions = decdataTables9.length;
+						drawCharts(decdataTables9, decregionsLatLng9);
+					}
+					else {
+						numRegions = jandataTables9.length;
+						drawCharts(jandataTables9, janregionsLatLng9);
+					}
+				}
+            }
+            else if (zoomLevel == 10) {
+                stepX = 0.1;
+                stepY = 0.06;
+                circleSize = 30;
+				
+				mintotal = 0;
+				factor = 0;
+				limit = 0;
+				addfactor = 0;
+				
+				if (countUsers)
+				{
+					if (currMonth == 11) {
+						numRegions = user_novdataTables10.length;
+						drawCharts(user_novdataTables10, user_novregionsLatLng10);
+					}
+					else if (currMonth == 12) {
+						numRegions = user_decdataTables10.length;
+						drawCharts(user_decdataTables10, user_decregionsLatLng10);
+					}
+					else {
+						numRegions = user_jandataTables10.length;
+						drawCharts(user_jandataTables10, user_janregionsLatLng10);
+					}
+				}
+				else
+				{
+					if (currMonth == 11) {
+						numRegions = novdataTables10.length;
+						drawCharts(novdataTables10, novregionsLatLng10);
+					}
+					else if (currMonth == 12) {
+						numRegions = decdataTables10.length;
+						drawCharts(decdataTables10, decregionsLatLng10);
+					}
+					else {
+						numRegions = jandataTables10.length;
+						drawCharts(jandataTables10, janregionsLatLng10);
+					}
+				}
+            }
+
+            else if (zoomLevel == 11) {
+                stepX = 0.05;
+                stepY = 0.05;
+                circleSize = 30;
+				
+				mintotal = 0;
+				factor = 0;
+				limit = 0;
+				addfactor = 0;
+				
+				if (countUsers)
+				{
+					if (currMonth == 11) {
+						numRegions = user_novdataTables11.length;
+						drawCharts(user_novdataTables11, user_novregionsLatLng11);
+					}
+					else if (currMonth == 12) {
+						numRegions = user_decdataTables11.length;
+						drawCharts(user_decdataTables11, user_decregionsLatLng11);
+					}
+					else {
+						numRegions = user_jandataTables11.length;
+						drawCharts(user_jandataTables11, user_janregionsLatLng11);
+					}
+				}
+				else
+				{
+
+					if (currMonth == 11) {
+						numRegions = novdataTables11.length;
+						drawCharts(novdataTables11, novregionsLatLng11);
+					}
+					else if (currMonth == 12) {
+						numRegions = decdataTables11.length;
+						drawCharts(decdataTables11, decregionsLatLng11);
+					}
+					else {
+						numRegions = jandataTables11.length;
+						drawCharts(jandataTables11, janregionsLatLng11);
+					}
+				}
+            }
+            else if (zoomLevel == 12) {
+                stepX = 0.025;
+                stepY = 0.02;
+                circleSize = 30;
+				
+				mintotal = 0;
+				factor = 0;
+				limit = 0;
+				addfactor = 0;
+				
+				if (countUsers)
+				{
+					if (currMonth == 11) {
+						numRegions = user_novdataTables12.length;
+						drawCharts(user_novdataTables12, user_novregionsLatLng12);
+					}
+					else if (currMonth == 12) {
+						numRegions = user_decdataTables12.length;
+						drawCharts(user_decdataTables12, user_decregionsLatLng12);
+					}
+					else {
+						numRegions = user_jandataTables12.length;
+						drawCharts(user_jandataTables12, user_janregionsLatLng12);
+					}
+				}
+				else
+				{
+					if (currMonth == 11) {
+						numRegions = novdataTables12.length;
+						drawCharts(novdataTables12, novregionsLatLng12);
+					}
+					else if (currMonth == 12) {
+						numRegions = decdataTables12.length;
+						drawCharts(decdataTables12, decregionsLatLng12);
+					}
+					else {
+						numRegions = jandataTables12.length;
+						drawCharts(jandataTables12, janregionsLatLng12);
+					}
+				}
+            }
+
+            else if (zoomLevel == 13) {
+                stepX = 0.01;
+                stepY = 0.007;
+                circleSize = 30;
+				
+				mintotal = 0;
+				factor = 0;
+				limit = 0;
+				addfactor = 0;
+				
+				if (countUsers)
+				{
+					if (currMonth == 11) {
+						numRegions = user_novdataTables13.length;
+						drawCharts(user_novdataTables13, user_novregionsLatLng13);
+					}
+					else if (currMonth == 12) {
+						numRegions = user_decdataTables13.length;
+						drawCharts(user_decdataTables13, user_decregionsLatLng13);
+					}
+					else {
+						numRegions = user_jandataTables13.length;
+						drawCharts(user_jandataTables13, user_janregionsLatLng13);
+					}
+				}
+				else
+				{
+					if (currMonth == 11) {
+						numRegions = novdataTables13.length;
+						drawCharts(novdataTables13, novregionsLatLng13);
+					}
+					else if (currMonth == 12) {
+						numRegions = decdataTables13.length;
+						drawCharts(decdataTables13, decregionsLatLng13);
+					}
+					else {
+						numRegions = jandataTables13.length;
+						drawCharts(jandataTables13, janregionsLatLng13);
+					}
+				}
+            }
+
+            else if (zoomLevel == 14) {
+                stepX = 0.005;
+                stepY = 0.0025;
+                circleSize = 30;
+				
+				mintotal = 0;
+				factor = 0;
+				limit = 0;
+				addfactor = 0;
+				
+				if (countUsers)
+				{
+					if (currMonth == 11) {
+						numRegions = user_novdataTables14.length;
+						drawCharts(user_novdataTables14, user_novregionsLatLng14);
+					}
+					else if (currMonth == 12) {
+						numRegions = user_decdataTables14.length;
+						drawCharts(user_decdataTables14, user_decregionsLatLng14);
+					}
+					else {
+						numRegions = user_jandataTables14.length;
+						drawCharts(user_jandataTables14, user_janregionsLatLng14);
+					}
+				}
+				else
+				{
+					if (currMonth == 11) {
+						numRegions = novdataTables14.length;
+						drawCharts(novdataTables14, novregionsLatLng14);
+					}
+					else if (currMonth == 12) {
+						numRegions = decdataTables14.length;
+						drawCharts(decdataTables14, decregionsLatLng14);
+					}
+					else {
+						numRegions = jandataTables14.length;
+						drawCharts(jandataTables14, janregionsLatLng14);
+					}
+				}
+            }
+
+            else if (zoomLevel == 15) {
+                stepX = 0.0025;
+                stepY = 0.002;
+                circleSize = 30;
+				
+				mintotal = 0;
+				factor = 0;
+				limit = 0;
+				addfactor = 0;
+				
+				if (countUsers)
+				{
+					if (currMonth == 11) {
+						numRegions = user_novdataTables15.length;
+						drawCharts(user_novdataTables15, user_novregionsLatLng15);
+					}
+					else if (currMonth == 12) {
+						numRegions = user_decdataTables15.length;
+						drawCharts(user_decdataTables15, user_decregionsLatLng15);
+					}
+					else {
+						numRegions = user_jandataTables15.length;
+						drawCharts(user_jandataTables15, user_janregionsLatLng15);
+					}
+				}
+				else
+				{
+					if (currMonth == 11) {
+						numRegions = novdataTables15.length;
+						drawCharts(novdataTables15, novregionsLatLng15);
+					}
+					else if (currMonth == 12) {
+						numRegions = decdataTables15.length;
+						drawCharts(decdataTables15, decregionsLatLng15);
+					}
+					else {
+						numRegions = jandataTables15.length;
+						drawCharts(jandataTables15, janregionsLatLng15);
+					}
+				}
+            }
+			
+			
+
+        }
+
+
+
+        var ol =new google.maps.OverlayView()
+        ChartMarker.prototype = ol;
+
+
+        function ChartMarker(options) {
+            this.setValues(options);
+
+            this.$inner = $('<div>').css({
+                position: 'relative',
+                left: '-50%', top: '-50%',
+                width: options.width,
+                height: options.height,
+                fontSize: '1px',
+                lineHeight: '1px',
+                backgroundColor: 'transparent',
+                cursor: 'default'
+            });
+
+            this.$div = $('<div>')
+              .append(this.$inner)
+              .css({
+                  position: 'absolute',
+                  display: 'none'
+              });
+        };
+
+
+
+        ChartMarker.prototype.onAdd = function () {
+            $(this.getPanes().overlayMouseTarget).append(this.$div);
+        };
+
+        ChartMarker.prototype.onRemove = function () {
+            this.$div.remove();
+        };
+
+        ChartMarker.prototype.remove = function () {
+            this.$div.remove();
+        };
+
+        ChartMarker.prototype.draw = function () {
+            var marker = this;
+            var projection = this.getProjection();
+            var position = projection.fromLatLngToDivPixel(this.get('position'));
+
+            this.$div.css({
+                left: position.x,
+                top: position.y,
+                display: 'block'
+            })
+
+            this.$inner
+              .html('<img src="' + this.get('image') + '"/>')
+              .click(function (event) {
+                  var events = marker.get('events');
+                  events && events.click(event);
+              });
+
+            this.chart = new google.visualization.PieChart(this.$inner[0]);
+            this.chart.draw(this.get('chartData'), this.get('chartOptions'));
+        };
+
+		function checkAllNone()
+        {
+		    var newValue;
+		    if (checkAllNoneBtn.innerText == "Check All") {
+		        newValue = true;
+		        checkAllNoneBtn.innerText = "Check None";
+		    }
+		    else {
+		        newVlaue = false;
+		        checkAllNoneBtn.innerText = "Check All";
+		    }
+
+            
+
+
+				arabic.checked = newValue;
+				english.checked = newValue;
+				spanish.checked = newValue;
+				turkish.checked = newValue;
+				indonesian.checked = newValue;
+				tagalog.checked = newValue;
+				french.checked = newValue;
+				persian.checked = newValue;
+				urdu.checked = newValue;
+				korean.checked = newValue;
+				tamil.checked = newValue;
+				german.checked = newValue;
+				portuguese.checked = newValue;
+				//other.checked = true;
+				
+				
+				
+				drawLang();
+			
+		
+		}
+		
+		function checkNone()
+		{
+				arabic.checked = false;
+				english.checked = false;
+				spanish.checked = false;
+				turkish.checked = false;
+				indonesian.checked = false;
+				tagalog.checked = false;
+				french.checked = false;
+				persian.checked = false;
+				urdu.checked = false;
+				korean.checked = false;
+				tamil.checked = false;
+				german.checked = false;
+				portuguese.checked = false;
+				//other.checked = true;
+				
+				
+				
+				drawLang();
+			
+		
+		}
+
+		function findStep(total)
+		{
+			var outval = 0;
+			var increase = 5;
+			
+			
+			
+				if (total < 20)
+					outval = 10;
+				else if (total < 40)
+					outval = 10+increase*1;
+				else if (total < 60)
+					outval = 10+increase*2;
+				else if (total < 80)
+					outval = 10+increase*3;
+				else if (total < 100)
+					outval = 10+increase*4;
+				else if (total < 200)
+					outval = 10+increase*5;
+				else if (total < 400)
+					outval = 10+increase*6;
+				else if (total < 600)
+					outval = 10+increase*7;
+				else if (total < 800)
+					outval = 10+increase*8;
+				else if (total < 1000)
+					outval = 10+increase*9;
+				else if (total < 1200)
+					outval = 10+increase*10;
+				else if (total < 1400)
+					outval = 10+increase*11;
+				else if (total < 1600)
+					outval = 10+increase*12;
+				else if (total < 1800)
+					outval = 10+increase*13;
+				else if (total < 2000)
+					outval = 10+increase*14;
+				else if (total < 4000)
+					outval = 10+increase*15;
+				else if (total < 6000)
+					outval = 10+increase*16;
+				else if (total < 8000)
+					outval = 10+increase*17;
+				else if (total < 10000)
+					outval = 10+increase*18;
+				else 
+					outval = 10+increase*19;
+				
+			
+		
+			return outval;
+		
+		}
+		
+        var map;
+        var grid
+
+		
+        function clearCharts() {
+            while (markersArr.length) {
+                var myChart = markersArr.pop();
+                myChart.setMap(null);
+                myChart.remove();
+            }
+            markersArr = [];
+           
+        }
+
+        function drawCharts(dataTablesArr, regionsLatLngArr, colorsArr) {
+
+            clearCharts();
+
+            //grid = new Graticule(map);
+
+            var options = {
+                backgroundColor: 'transparent',
+                fontSize: 8.5,
+                legend: 'none',
+				colors: colorsArr
+            };
+
+
+
+            var inbound = 0;
+            var chartTG;
+
+            //alert(inboundsArr[0]);	
+           
+
+            for (var i = 0; i < numRegions; i++) {
+                if (regionsLatLngArr[i].lat() > lat1 && regionsLatLngArr[i].lat() < lat2 && regionsLatLngArr[i].lng() > lng1 && regionsLatLngArr[i].lng() < lng2) 
+				{
+					
+                    var total = 0;
+					var step = 0;
+					
+		
+					
+					if (numLanguages > 0)
+					{
+						for (var t=0; t < numLanguages; t++)
+						{
+							total = total + dataTablesArr[i].getValue(t,1);
+						}
+					}
+					
+					
+					//alert(total);
+					inbound++;
+					
+					step = findStep(total);
+					/*
+					if (step > 100)
+						stepY = stepY + 0.2;
+					else if (step > 75)
+						stepY = stepY + 0.1;
+					*/
+						
+                    markersArr.push(new ChartMarker({
+                        map: map,
+                        position: new google.maps.LatLng(regionsLatLngArr[i].lat() + stepY, regionsLatLngArr[i].lng() + stepX),
+                        width: circleSize + step,
+                        height: circleSize + step,
+                        chartData: dataTablesArr[i],
+                        chartOptions: options //{ backgroundColor: 'transparent', fontSize: 8, legend: 'none' },
+
+                    }));
+                }
+
+
+            }
+
+            //dragend
+
+
+
+
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+        //google.setOnLoadCallback(initialize);
+
+
+
+
+
+    </script>
+    
+  </head>
+  
+  <body style="width:100%; height:100%">
+    
+    <div style="min-width:1340px; min-height:420px;">
+      <div class="navbar navbar-inverse" style="position: static;">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+              <span class="icon-bar">
+              </span>
+              <span class="icon-bar">
+              </span>
+              <span class="icon-bar">
+              </span>
+            </a>
+            <a class="brand" href="#" onclick="alert('hi');">
+              Tweet Languages
+            </a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav" style="padding:10px">
+                
+                <table style="margin-top:-10px; margin-left:30px;">
+                  <tr>
+                    <td style="background-color:#3366cc" class="language_color">
+                        
+                    </td>
+                    <td class="language_name">
+                      English 
+					  <input  type="checkbox" id="english" onchange="drawLang()"  checked="checked"/>
+                    </td>
+                          
+                    
+                    
+                    <td style="background-color:#55d7d7" class="language_color">
+                    </td>
+                    <td class="language_name">
+                      Spanish
+					    <input  type="checkbox" id="spanish" onchange="drawLang()"  checked="checked"/>
+                    </td>
+                    
+                    
+                    <TD style="background-color:#dc3912" class="language_color">
+                    </td>
+                  <td class="language_name">
+                    Turkish
+				  <input  type="checkbox" id="turkish" onchange="drawLang()" checked="checked"/>
+                  </td>
+                  
+                  <TD style="background-color:#ff9900"class="language_color">
+                  </td>
+				<td class="language_name">
+                  Indonesian
+				 <input  type="checkbox" id="indonesian" onchange="drawLang()" checked="checked"/>
+                </td>
+                
+                
+				<TD style="background-color:#109618" class="language_color">
+                </td>
+              <td class="language_name">
+                Tagalog
+			  <input  type="checkbox" id="tagalog" onchange="drawLang()" checked="checked"/>
+              </td>
+              
+              <TD style="background-color:#990099" class="language_color">
+              </td>
+            <td class="language_name">
+              French
+			 <input  type="checkbox" id="french" onchange="drawLang()" checked="checked"/>
+            </td>
+            
+            <TD style="background-color:#ED561B" class="language_color">
+            </td>
+          <td class="language_name">
+            
+            Arabic
+            <input  type="checkbox" id="arabic" onchange="drawLang()" />
+            
+          </td>
+		  
+		  
+        </tr>
+        
+        <tr>
+          <td>
+          </td>
+        </tr>
+        
+        <tr>
+          
+          
+          <TD style="background-color:#9e7151" class="language_color">
+          </td>
+        <td class="language_name">
+          Persian
+		  <input  type="checkbox" id="persian" onchange="drawLang()" /checked="checked">
+        </td>
+        
+            
+        <TD style="background-color:#a9a9a9" class="language_color">
+        </td>
+      <td class="language_name">
+        Urdu
+		 <input  type="checkbox" id="urdu" onchange="drawLang()" checked="checked"/>
+      </td>
+      
+      <TD style="background-color:#fcf357"class="language_color">
+      </td>
+    <td class="language_name">
+      Korean
+	  <input  type="checkbox" id="korean" onchange="drawLang()" checked="checked" />
+    </td>
+    
+    
+    <TD style="background-color:#943634" class="language_color">
+    </td>
+  <td class="language_name">
+    Portuguese
+	 <input  type="checkbox" id="portuguese" onchange="drawLang()"checked="checked" />
+  </td>
+  
+  <TD style="background-color:#7e55fc" class="language_color">
+  </td>
+<td class="language_name">
+  German
+   <input  type="checkbox" id="german" onchange="drawLang()" checked="checked"/>
+</td>
+
+<TD style="background-color:#22aa99" class="language_color">
+    
+</td>
+<td class="language_name">
+  Tamil
+   <input  type="checkbox" id="tamil" onchange="drawLang()" checked="checked" />
+    
+</td>
+
+
+</tr>
+</table>
+
+</ul>
+
+
+
+                
+                
+                
+                <button type="button" id="checkAllNoneBtn" class="btn btn-mini  " onclick="checkAllNone()" style="width:80px;" >Check None</button>
+
+                <!--initilized to count tweets -->
+                <div class="btn-group" data-toggle-name="count_options" data-toggle="buttons-radio">
+                    
+                    <button type="button" id="countUsersBtn" value="users" data-toggle="button" class="btn btn-mini  " onclick="processUserCounts(true)" >Distinct Users</button>
+                    <button type="button" id="countTweetsBtn" value ="tweets" data-toggle="button" class="btn btn-mini active" onclick="processUserCounts(false)" >Distinct Tweets</button>
+                </div>
+                
+                
+                
+
+
+
+<ul class="nav pull-right">
+  
+  
+  
+  
+  
+  
+  
+</ul>
+</div>
+<!-- /.nav-collapse -->
+</div>
+</div>
+<!-- /navbar-inner -->
+</div>
+<!-- /navbar -->
+
+
+
+<input type="text" id="pac-input" style="position: absolute; top:55px; left:40px; margin-top:10px; background-color:#1b1b1b; color:#fff; text-shadow: 0 -1px 0 rgba(0,0,0,0.25); " class="search-query span4" placeholder="Search City..."  >
+
+
+
+</div>
+
+<div id="map_canvas" style="bottom:0px; width:100%; position:absolute; top:50px; min-width:1340px; min-height:400px;">
+  
+</div>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-49016258-1', 'gistic.org');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+​

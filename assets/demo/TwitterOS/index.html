@@ -1,0 +1,1342 @@
+﻿<!--
+You are free to copy and use this sample in accordance with the terms of the
+Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>
+      Tweet Sources Distribution in Saudi Arabia
+    </title>
+	
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js">
+    </script>
+    <script type="text/javascript" src="js/jquery-ui-1.7.1.custom.min.js">
+    </script>
+    
+    <script type="text/javascript" src="https://www.google.com/jsapi"> 
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places">
+    </script>
+	<script type="text/javascript" src="js/v3_ll_grat.js">
+    </script>
+    
+    <script src="js/jquery.js">
+    </script>
+    <script src="js/bootstrap-transition.js">
+    </script>
+    <script src="js/bootstrap-dropdown.js">
+    </script>
+	
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    
+	
+	<style>
+      html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+        font-size: 90%;
+      }
+      
+      
+      .cbox{
+        font-family: "Tahoma", "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+        font-size: 90%;
+      }
+      
+      
+      .language_name {
+        width:90px;
+        padding-left:3px;
+        color:#999;
+        font-size:12px;
+        vertical-align: middle;
+
+      }
+      
+      .language_color {
+        -o-border-radius:4px;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        
+        width:19px;
+        height:10px;
+        
+        
+      }
+      
+      
+	</style>
+    
+    <script type="text/javascript">
+        google.load('visualization', '1', {
+            packages: ['corechart']
+        });
+    </script>
+    
+    
+    <script type="text/javascript">
+
+
+
+        
+		var decdataTables = [];
+		var regionsLatLng = [];
+        
+		
+		//December Data
+		
+		//Lat and Lng 
+		var decregionsLatLng4 = [];
+        var decregionsLatLng5 = [];
+        var decregionsLatLng6 = [];
+        var decregionsLatLng7 = [];
+        var decregionsLatLng8 = [];
+        var decregionsLatLng9 = [];
+        var decregionsLatLng10 = [];
+        var decregionsLatLng11 = [];
+        var decregionsLatLng12 = [];
+        var decregionsLatLng13 = [];
+        var decregionsLatLng14 = [];
+        var decregionsLatLng15 = [];
+
+		//Android Counts
+		
+        var decandroidCounts4 = [];
+        var decandroidCounts5 = [];
+		var decandroidCounts6 = [];
+		var decandroidCounts7 = [];
+		var decandroidCounts8 = [];
+		var decandroidCounts9 = [];
+		var decandroidCounts10 = [];
+		var decandroidCounts11 = [];
+		var decandroidCounts12 = [];
+		var decandroidCounts13 = [];
+		var decandroidCounts14 = [];
+		var decandroidCounts15 = [];
+
+		//iPhone Counts
+		
+		var deciphoneCounts4 = [];
+        var deciphoneCounts5 = [];
+		var deciphoneCounts6 = [];
+		var deciphoneCounts7 = [];
+		var deciphoneCounts8 = [];
+		var deciphoneCounts9 = [];
+		var deciphoneCounts10 = [];
+		var deciphoneCounts11 = [];
+		var deciphoneCounts12 = [];
+		var deciphoneCounts13 = [];
+		var deciphoneCounts14 = [];
+		var deciphoneCounts15 = [];
+        
+		//BlackBerry Counts
+		
+		var decblackberryCounts4 = [];
+        var decblackberryCounts5 = [];
+		var decblackberryCounts6 = [];
+		var decblackberryCounts7 = [];
+		var decblackberryCounts8 = [];
+		var decblackberryCounts9 = [];
+		var decblackberryCounts10 = [];
+		var decblackberryCounts11 = [];
+		var decblackberryCounts12 = [];
+		var decblackberryCounts13 = [];
+		var decblackberryCounts14 = [];
+		var decblackberryCounts15 = [];
+		
+		//iOS Counts
+		
+		var deciosCounts4 = [];
+		var deciosCounts5 = [];
+		var deciosCounts6 = [];
+		var deciosCounts7 = [];
+		var deciosCounts8 = [];
+		var deciosCounts9 = [];
+		var deciosCounts10 = [];
+		var deciosCounts11 = [];
+		var deciosCounts12 = [];
+		var deciosCounts13 = [];
+		var deciosCounts14 = [];
+		var deciosCounts15 = [];
+		
+		//iPad Counts
+		
+		var decipadCounts4 = [];
+		var decipadCounts5 = [];
+		var decipadCounts6 = [];
+		var decipadCounts7 = [];
+		var decipadCounts8 = [];
+		var decipadCounts9 = [];
+		var decipadCounts10 = [];
+		var decipadCounts11 = [];
+		var decipadCounts12 = [];
+		var decipadCounts13 = [];
+		var decipadCounts14 = [];
+		var decipadCounts15 = [];
+		
+		//windows Counts
+		
+		var decwindowsCounts4 = [];
+		var decwindowsCounts5 = [];
+		var decwindowsCounts6 = [];
+		var decwindowsCounts7 = [];
+		var decwindowsCounts8 = [];
+		var decwindowsCounts9 = [];
+		var decwindowsCounts10 = [];
+		var decwindowsCounts11 = [];
+		var decwindowsCounts12 = [];
+		var decwindowsCounts13 = [];
+		var decwindowsCounts14 = [];
+		var decwindowsCounts15 = [];
+		
+		//mac Counts
+		
+		var decmacCounts4 = [];
+		var decmacCounts5 = [];
+		var decmacCounts6 = [];
+		var decmacCounts7 = [];
+		var decmacCounts8 = [];
+		var decmacCounts9 = [];
+		var decmacCounts10 = [];
+		var decmacCounts11 = [];
+		var decmacCounts12 = [];
+		var decmacCounts13 = [];
+		var decmacCounts14 = [];
+		var decmacCounts15 = [];
+		
+		//nokia Counts
+		
+		var decnokiaCounts4 = [];
+		var decnokiaCounts5 = [];
+		var decnokiaCounts6 = [];
+		var decnokiaCounts7 = [];
+		var decnokiaCounts8 = [];
+		var decnokiaCounts9 = [];
+		var decnokiaCounts10 = [];
+		var decnokiaCounts11 = [];
+		var decnokiaCounts12 = [];
+		var decnokiaCounts13 = [];
+		var decnokiaCounts14 = [];
+		var decnokiaCounts15 = [];
+		
+		//instagram Counts
+		
+		var decinstagramCounts4 = [];
+		var decinstagramCounts5 = [];
+		var decinstagramCounts6 = [];
+		var decinstagramCounts7 = [];
+		var decinstagramCounts8 = [];
+		var decinstagramCounts9 = [];
+		var decinstagramCounts10 = [];
+		var decinstagramCounts11 = [];
+		var decinstagramCounts12 = [];
+		var decinstagramCounts13 = [];
+		var decinstagramCounts14 = [];
+		var decinstagramCounts15 = [];
+		
+		//foursquare counts
+		var decfoursquareCounts4 = [];
+		var decfoursquareCounts5 = [];
+		var decfoursquareCounts6 = [];
+		var decfoursquareCounts7 = [];
+		var decfoursquareCounts8 = [];
+		var decfoursquareCounts9 = [];
+		var decfoursquareCounts10 = [];
+		var decfoursquareCounts11 = [];
+		var decfoursquareCounts12 = [];
+		var decfoursquareCounts13 = [];
+		var decfoursquareCounts14 = [];
+		var decfoursquareCounts15 = [];
+		
+		
+		//other counts
+		var decotherCounts4 = [];
+		var decotherCounts5 = [];
+		var decotherCounts6 = [];
+		var decotherCounts7 = [];
+		var decotherCounts8 = [];
+		var decotherCounts9 = [];
+		var decotherCounts10 = [];
+		var decotherCounts11 = [];
+		var decotherCounts12 = [];
+		var decotherCounts13 = [];
+		var decotherCounts14 = [];
+		var decotherCounts15 = [];
+		
+		
+        var initialDraw = false;
+		//Loading source counts
+		//a -- Android, ph -- iPhone, bb -- blackberry, os -- ios
+		//pd -- iPad, w -- Windows, m -- Mac, n -- Nokia
+		// i -- instagram, f -- foursquare,  o -- Other
+        
+		function loadSourcesCounts(zLevel, month, user,latlngArr, 
+									aCountsArr, phCountsArr, bbCountsArr, osCountsArr,
+									pdCountsArr, wCountsArr, mCountsArr, nCountsArr, iCountsArr,
+									fCountsArr, oCountsArr) {
+
+            var fileName;
+
+			if (user == 0)
+			{
+				if (month == 11)
+					fileName = "november_os_" + zLevel + ".csv";
+				else if (month == 12)
+					fileName = "december_os_" + zLevel + ".csv";
+				else
+					fileName = "january_os_" + zLevel + ".csv";
+			}
+			else if (user == 1)
+			{
+				if (month == 11)
+					fileName = "november_os_user_" + zLevel + ".csv";
+				else if (month == 12)
+					fileName = "december_os_user_" + zLevel + ".csv";
+				else
+					fileName = "january_os_user_" + zLevel + ".csv";
+			}
+
+            var req = new XMLHttpRequest();
+            req.open("GET", fileName, true);
+            
+            req.send(null);
+            
+            req.onreadystatechange = function loadLanguageCounts() {
+                if (req.readyState == 4) {
+
+                    var lines = req.responseText.split('\n');
+                    numRegions = lines.length;
+					var otherCountVar= 0;
+
+                    for (var i = 0; i < lines.length; i++) {
+					
+                        var fields = lines[i].split('\t');
+
+                        latlngArr[i] = new google.maps.LatLng(parseFloat(fields[0]), parseFloat(fields[1]));
+						aCountsArr[i] = parseFloat(fields[2]);
+						phCountsArr[i] = parseFloat(fields[3]);
+						bbCountsArr[i] = parseFloat(fields[4]);
+						osCountsArr[i] = parseFloat(fields[5]);
+						pdCountsArr[i] = parseFloat(fields[6]);
+						wCountsArr[i] = parseFloat(fields[7]);
+						mCountsArr[i] = parseFloat(fields[8]);
+						nCountsArr[i] = parseFloat(fields[9]);
+						iCountsArr[i] = parseFloat(fields[10]);
+						fCountsArr[i] = parseFloat(fields[11]);
+						oCountsArr[i] = parseFloat(fields[12]);
+						
+                    }
+                    if (zLevel == 15 & month == 1 & !initialDraw) {
+                        initialDraw = true;
+                        draw();
+                    }
+                }
+
+                
+            }
+
+
+        }
+		
+														
+	//Loading December Data
+	
+        loadSourcesCounts(4, 12, 0,decregionsLatLng4, decandroidCounts4, deciphoneCounts4, decblackberryCounts4, deciosCounts4,
+														decipadCounts4, decwindowsCounts4, decmacCounts4, decnokiaCounts4,
+														decinstagramCounts4, decfoursquareCounts4, decotherCounts4);
+        
+		loadSourcesCounts(5, 12, 0,decregionsLatLng5, decandroidCounts5, deciphoneCounts5, decblackberryCounts5, deciosCounts5,
+														decipadCounts5, decwindowsCounts5, decmacCounts5, decnokiaCounts5,
+														decinstagramCounts5, decfoursquareCounts5, decotherCounts5);
+
+		loadSourcesCounts(6, 12, 0,decregionsLatLng6, decandroidCounts6, deciphoneCounts6, decblackberryCounts6, deciosCounts6,
+														decipadCounts6, decwindowsCounts6, decmacCounts6, decnokiaCounts6,
+														decinstagramCounts6, decfoursquareCounts6, decotherCounts6);
+	
+		loadSourcesCounts(7, 12, 0,decregionsLatLng7, decandroidCounts7, deciphoneCounts7, decblackberryCounts7, deciosCounts7,
+														decipadCounts7, decwindowsCounts7, decmacCounts7, decnokiaCounts7,
+														decinstagramCounts7, decfoursquareCounts7, decotherCounts7);
+
+		loadSourcesCounts(8, 12, 0,decregionsLatLng8, decandroidCounts8, deciphoneCounts8, decblackberryCounts8, deciosCounts8,
+														decipadCounts8, decwindowsCounts8, decmacCounts8, decnokiaCounts8,
+														decinstagramCounts8, decfoursquareCounts8, decotherCounts8);
+		
+		loadSourcesCounts(9, 12, 0,decregionsLatLng9, decandroidCounts9, deciphoneCounts9, decblackberryCounts9, deciosCounts9,
+														decipadCounts9, decwindowsCounts9, decmacCounts9, decnokiaCounts9,
+														decinstagramCounts9, decfoursquareCounts9, decotherCounts9);
+
+		loadSourcesCounts(10, 12, 0,decregionsLatLng10, decandroidCounts10, deciphoneCounts10, decblackberryCounts10, deciosCounts10,
+														decipadCounts10, decwindowsCounts10, decmacCounts10, decnokiaCounts10,
+														decinstagramCounts10, decfoursquareCounts10, decotherCounts10);
+
+		loadSourcesCounts(11, 12, 0,decregionsLatLng11, decandroidCounts11, deciphoneCounts11, decblackberryCounts11, deciosCounts11,
+														decipadCounts11, decwindowsCounts11, decmacCounts11, decnokiaCounts11,
+														decinstagramCounts11, decfoursquareCounts11, decotherCounts11);
+
+		loadSourcesCounts(12, 12, 0,decregionsLatLng12, decandroidCounts12, deciphoneCounts12, decblackberryCounts12, deciosCounts12,
+														decipadCounts12, decwindowsCounts12, decmacCounts12, decnokiaCounts12,
+														decinstagramCounts12, decfoursquareCounts12, decotherCounts12);
+
+		loadSourcesCounts(13, 12, 0,decregionsLatLng13, decandroidCounts13, deciphoneCounts13, decblackberryCounts13, deciosCounts13,
+														decipadCounts13, decwindowsCounts13, decmacCounts13, decnokiaCounts13,
+														decinstagramCounts13, decfoursquareCounts13, decotherCounts13);
+
+		loadSourcesCounts(14, 12, 0,decregionsLatLng14, decandroidCounts14, deciphoneCounts14, decblackberryCounts14, deciosCounts14,
+														decipadCounts14, decwindowsCounts14, decmacCounts14, decnokiaCounts14,
+														decinstagramCounts14, decfoursquareCounts14, decotherCounts14);
+
+		loadSourcesCounts(15, 12, 0,decregionsLatLng15, decandroidCounts15, deciphoneCounts15, decblackberryCounts15, deciosCounts15,
+														decipadCounts15, decwindowsCounts15, decmacCounts15, decnokiaCounts15,
+														decinstagramCounts15, decfoursquareCounts15, decotherCounts15);														
+		
+       
+        var numRegions;
+		var numSources;
+        var zoomLevel = 7;
+		var fileName;
+        var stepX;
+        var stepY;
+        var circleSize;
+        var mapCenter = new google.maps.LatLng(25, 45);
+        var lat1 = 17;
+        var lat2 = 30;
+        var lng1 = 38;
+        var lng2 = 52;
+        var currMonth = 12;
+
+        var markersArr = [];
+        var markers = [];
+
+
+
+        function initialize() {
+            map = new google.maps.Map($('#map_canvas')[0], {
+                zoom: zoomLevel,
+                minZoom: 4,
+                maxZoom: 15,
+                center: mapCenter,
+                panControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+
+
+            google.maps.event.addListener(map, 'idle', function () {
+                mapCenter = map.getCenter();
+                zoomLevel = map.getZoom();
+                var bounds = map.getBounds();
+                //alert('Zoom detected '+zoomLevel+' '+numRegions);			
+                //alert('Map center '+mapCenter);
+                //alert('Map bounds '+bounds);
+                lat1 = bounds.getSouthWest().lat();
+                lat2 = bounds.getNorthEast().lat();
+                lng1 = bounds.getSouthWest().lng();
+                lng2 = bounds.getNorthEast().lng();
+                //clearCharts();
+                //alert('zoom '+lat1);
+                if (zoomLevel > 3 && zoomLevel <= 15) {
+                    draw();
+                }
+            });
+
+
+            // Create the search box and link it to the UI element.
+            var input = (document.getElementById('pac-input'));
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+            var searchBox = new google.maps.places.SearchBox(input);
+
+            // Listen for the event fired when the user selects an item from the
+            // pick list. Retrieve the matching places for that item.
+            google.maps.event.addListener(searchBox, 'places_changed', function () {
+                var places = searchBox.getPlaces();
+
+                for (var i = 0, marker; marker = markers[i]; i++) {
+                    marker.setMap(null);
+                }
+
+                // For each place, get the icon, place name, and location.
+                markers = [];
+                var bounds = new google.maps.LatLngBounds();
+                for (var i = 0, place; place = places[i]; i++) {
+                    var image = {
+                        url: place.icon,
+                        size: new google.maps.Size(71, 71),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(17, 34),
+                        scaledSize: new google.maps.Size(25, 25)
+                    };
+
+                    // Create a marker for each place.
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        icon: image,
+                        title: place.name,
+                        position: place.geometry.location
+                    });
+
+                    markers.push(marker);
+                    bounds.extend(place.geometry.location);
+                }
+
+                map.fitBounds(bounds);
+            });
+
+            // Bias the SearchBox results towards places that are within the bounds of the
+            // current map's viewport.
+            google.maps.event.addListener(map, 'bounds_changed', function () {
+                var bounds = map.getBounds();
+                searchBox.setBounds(bounds);
+            });
+
+            draw();
+        }
+
+        function changeMonth() {
+            if (month.selectedIndex == 0) {
+                currMonth = 11;
+            }
+            else if (month.selectedIndex == 1) {
+                currMonth = 12;
+            }
+            else {
+                currMonth = 1;
+            }
+
+            draw();
+        }
+
+		
+		
+        
+		function draw()
+		{
+		
+				
+				var pos = 0;
+				numSources = 0;
+				
+				var colors = [] ;
+
+				
+				var androidCounts = [];
+				var iphoneCounts = [];
+				var blackberryCounts = [];
+				var iosCounts = [];
+				var ipadCounts = [];
+				var windowsCounts = [];
+				var macCounts = [];
+				var nokiaCounts = [];
+				var instagramCounts = [];
+				var foursquareCounts = [];
+				var otherCounts = [];
+				
+				
+				if (android.checked)
+				{
+					numSources++;
+					colors[pos] = '#3366cc';
+					pos++;
+				}
+				
+				if(iphone.checked)
+				{
+					numSources++;
+					colors[pos] = '#a9a9a9';
+					pos++;
+				}
+				
+				if(blackberry.checked)
+				{
+					numSources++;
+					colors[pos] = '#dc3912';
+					pos++;
+				}
+				
+				if(ios.checked)
+				{
+					numSources++;
+					colors[pos] = '#ff9900';
+					pos++;
+				}
+				
+				if(ipad.checked)
+				{
+					numSources++;
+					colors[pos] = '#109618';
+					pos++;
+				}
+				
+				if(windows.checked)
+				{
+					numSources++;
+					colors[pos] = '#990099';
+					pos++;
+				}
+				
+				if(mac.checked)
+				{
+					numSources++;
+					colors[pos] = '#7e55fc';
+					pos++;
+				}
+				if (nokia.checked)
+				{
+					numSources++;
+					colors[pos] = '#9e7151';
+					pos++;
+				}
+				
+				if(instagram.checked)
+				{
+					numSources++;
+					colors[pos] = '#943634';
+					pos++;
+				}
+				if(foursquare.checked)
+				{
+					numSources++;
+					colors[pos] = '#fcf357';
+					pos++;
+				}
+				
+				
+				if(other.checked)
+				{
+					numSources++;
+					colors[pos] = '#22aa99';
+					pos++;
+				}
+				
+				
+				if (zoomLevel == 4)
+				{
+					
+					stepX = 10;
+					stepY = 10;
+					circleSize = 30;
+					
+					
+					
+					numRegions = decregionsLatLng4.length;
+					regionsLatLng = decregionsLatLng4;
+					
+					androidCounts = decandroidCounts4;
+					iphoneCounts = deciphoneCounts4;
+					blackberryCounts = decblackberryCounts4;
+					iosCounts = deciosCounts4;
+					ipadCounts = decipadCounts4;
+					windowsCounts = decwindowsCounts4;
+					macCounts = decmacCounts4;
+					nokiaCounts = decnokiaCounts4;
+					instagramCounts = decinstagramCounts4;
+					foursquareCounts = decfoursquareCounts4;
+					otherCounts = decotherCounts4;
+					
+				}
+				else if (zoomLevel == 5)
+				{
+					
+					stepX = 2.5;
+					stepY = 2.25;
+					circleSize = 30;
+					
+					numRegions = decregionsLatLng5.length;
+					regionsLatLng = decregionsLatLng5;
+					
+					androidCounts = decandroidCounts5;
+					iphoneCounts = deciphoneCounts5;
+					blackberryCounts = decblackberryCounts5;
+					iosCounts = deciosCounts5;
+					ipadCounts = decipadCounts5;
+					windowsCounts = decwindowsCounts5;
+					macCounts = decmacCounts5;
+					nokiaCounts = decnokiaCounts5;
+					instagramCounts = decinstagramCounts5;
+					foursquareCounts = decfoursquareCounts5;
+					otherCounts = decotherCounts5;
+				}
+				else if (zoomLevel == 6)
+				{
+					
+					stepX = 1;
+					stepY = 1.4;
+					circleSize = 30;
+					
+					numRegions = decregionsLatLng6.length;
+					regionsLatLng = decregionsLatLng6;
+					
+					androidCounts = decandroidCounts6;
+					iphoneCounts = deciphoneCounts6;
+					blackberryCounts = decblackberryCounts6;
+					iosCounts = deciosCounts6;
+					ipadCounts = decipadCounts6;
+					windowsCounts = decwindowsCounts6;
+					macCounts = decmacCounts6;
+					nokiaCounts = decnokiaCounts6;
+					instagramCounts = decinstagramCounts6;
+					foursquareCounts = decfoursquareCounts6;
+					otherCounts = decotherCounts6;
+				}
+				else if (zoomLevel == 7)
+				{
+					stepX = 0.5;
+					stepY = 0.7;
+					circleSize = 30;
+					
+					numRegions = decregionsLatLng7.length;
+					regionsLatLng = decregionsLatLng7;
+					
+					androidCounts = decandroidCounts7;
+					iphoneCounts = deciphoneCounts7;
+					blackberryCounts = decblackberryCounts7;
+					iosCounts = deciosCounts7;
+					ipadCounts = decipadCounts7;
+					windowsCounts = decwindowsCounts7;
+					macCounts = decmacCounts7;
+					nokiaCounts = decnokiaCounts7;
+					instagramCounts = decinstagramCounts7;
+					foursquareCounts = decfoursquareCounts7;
+					otherCounts = decotherCounts7;
+				}
+				else if (zoomLevel == 8)
+				{
+					
+					stepX = 0.25;
+					stepY = 0.3;
+					circleSize = 30;
+					
+					numRegions = decregionsLatLng8.length;
+					regionsLatLng = decregionsLatLng8;
+					
+					androidCounts = decandroidCounts8;
+					iphoneCounts = deciphoneCounts8;
+					blackberryCounts = decblackberryCounts8;
+					iosCounts = deciosCounts8;
+					ipadCounts = decipadCounts8;
+					windowsCounts = decwindowsCounts8;
+					macCounts = decmacCounts8;
+					nokiaCounts = decnokiaCounts8;
+					instagramCounts = decinstagramCounts8;
+					foursquareCounts = decfoursquareCounts8;
+					otherCounts = decotherCounts8;
+				}
+				else if (zoomLevel == 9)
+				{
+					
+					stepX = 0.25;
+					stepY = 0.15;
+					circleSize = 30;
+					
+					numRegions = decregionsLatLng9.length;
+					regionsLatLng = decregionsLatLng9;
+					
+					androidCounts = decandroidCounts9;
+					iphoneCounts = deciphoneCounts9;
+					blackberryCounts = decblackberryCounts9;
+					iosCounts = deciosCounts9;
+					ipadCounts = decipadCounts9;
+					windowsCounts = decwindowsCounts9;
+					macCounts = decmacCounts9;
+					nokiaCounts = decnokiaCounts9;
+					instagramCounts = decinstagramCounts9;
+					foursquareCounts = decfoursquareCounts9;
+					otherCounts = decotherCounts9;
+				}else if (zoomLevel == 10)
+				{
+					
+					stepX = 0.1;
+					stepY = 0.06;
+					circleSize = 30;
+					
+					numRegions = decregionsLatLng10.length;
+					regionsLatLng = decregionsLatLng10;
+					
+					androidCounts = decandroidCounts10;
+					iphoneCounts = deciphoneCounts10;
+					blackberryCounts = decblackberryCounts10;
+					iosCounts = deciosCounts10;
+					ipadCounts = decipadCounts10;
+					windowsCounts = decwindowsCounts10;
+					macCounts = decmacCounts10;
+					nokiaCounts = decnokiaCounts10;
+					instagramCounts = decinstagramCounts10;
+					foursquareCounts = decfoursquareCounts10;
+					otherCounts = decotherCounts10;
+				
+				
+				}else if (zoomLevel == 11)
+				{
+					
+					stepX = 0.05;
+					stepY = 0.05;
+					circleSize = 30;
+					
+					numRegions = decregionsLatLng11.length;
+					regionsLatLng = decregionsLatLng11;
+					
+					androidCounts = decandroidCounts11;
+					iphoneCounts = deciphoneCounts11;
+					blackberryCounts = decblackberryCounts11;
+					iosCounts = deciosCounts11;
+					ipadCounts = decipadCounts11;
+					windowsCounts = decwindowsCounts11;
+					macCounts = decmacCounts11;
+					nokiaCounts = decnokiaCounts11;
+					instagramCounts = decinstagramCounts11;
+					foursquareCounts = decfoursquareCounts11;
+					otherCounts = decotherCounts11;
+				}else if (zoomLevel == 12)
+				{
+					
+					stepX = 0.025;
+					stepY = 0.02;
+					circleSize = 30;
+					
+					numRegions = decregionsLatLng12.length;
+					regionsLatLng = decregionsLatLng12;
+					
+					androidCounts = decandroidCounts12;
+					iphoneCounts = deciphoneCounts12;
+					blackberryCounts = decblackberryCounts12;
+					iosCounts = deciosCounts12;
+					ipadCounts = decipadCounts12;
+					windowsCounts = decwindowsCounts12;
+					macCounts = decmacCounts12;
+					nokiaCounts = decnokiaCounts12;
+					instagramCounts = decinstagramCounts12;
+					foursquareCounts = decfoursquareCounts12;
+					otherCounts = decotherCounts12;
+				
+				}else if (zoomLevel == 13)
+				{
+					
+					stepX = 0.01;
+					stepY = 0.007;
+					circleSize = 30;
+					
+					numRegions = decregionsLatLng13.length;
+					regionsLatLng = decregionsLatLng13;
+					
+					androidCounts = decandroidCounts13;
+					iphoneCounts = deciphoneCounts13;
+					blackberryCounts = decblackberryCounts13;
+					iosCounts = deciosCounts13;
+					ipadCounts = decipadCounts13;
+					windowsCounts = decwindowsCounts13;
+					macCounts = decmacCounts13;
+					nokiaCounts = decnokiaCounts13;
+					instagramCounts = decinstagramCounts13;
+					foursquareCounts = decfoursquareCounts13;
+					otherCounts = decotherCounts13;
+				
+				}else if (zoomLevel == 14)
+				{
+					
+					stepX = 0.005;
+					stepY = 0.0025;
+					circleSize = 30;
+					
+					numRegions = decregionsLatLng14.length;
+					regionsLatLng = decregionsLatLng14;
+					
+					androidCounts = decandroidCounts14;
+					iphoneCounts = deciphoneCounts14;
+					blackberryCounts = decblackberryCounts14;
+					iosCounts = deciosCounts14;
+					ipadCounts = decipadCounts14;
+					windowsCounts = decwindowsCounts14;
+					macCounts = decmacCounts14;
+					nokiaCounts = decnokiaCounts14;
+					instagramCounts = decinstagramCounts14;
+					foursquareCounts = decfoursquareCounts14;
+					otherCounts = decotherCounts14;
+				}else if (zoomLevel == 15)
+				{
+					
+					stepX = 0.0025;
+					stepY = 0.002;
+					circleSize = 30;
+					
+					numRegions = decregionsLatLng15.length;
+					regionsLatLng = decregionsLatLng15;
+					
+					androidCounts = decandroidCounts15;
+					iphoneCounts = deciphoneCounts15;
+					blackberryCounts = decblackberryCounts15;
+					iosCounts = deciosCounts15;
+					ipadCounts = decipadCounts15;
+					windowsCounts = decwindowsCounts15;
+					macCounts = decmacCounts15;
+					nokiaCounts = decnokiaCounts15;
+					instagramCounts = decinstagramCounts15;
+					foursquareCounts = decfoursquareCounts15;
+					otherCounts = decotherCounts15;
+				}
+				
+				
+				
+				
+				
+				for (var i = 0; i < numRegions; i++) {
+
+
+                        decdataTables[i] = new google.visualization.DataTable();
+                        decdataTables[i].addColumn('string', 'Language');
+                        decdataTables[i].addColumn('number', 'Number of Tweets');
+						
+						if (android.checked)
+							decdataTables[i].addRow(['Android', androidCounts[i]]);
+							
+								
+						if (iphone.checked)
+							decdataTables[i].addRow(['iPhone', iphoneCounts[i]]);
+					
+						if (blackberry.checked)
+							decdataTables[i].addRow(['BlackBerry', blackberryCounts[i]]);
+							
+						if (ios.checked)
+							decdataTables[i].addRow(['iOS', iosCounts[i]]);
+						
+						if (ipad.checked)
+							decdataTables[i].addRow(['iPad', ipadCounts[i]]);
+						
+						if (windows.checked)
+							decdataTables[i].addRow(['Windows', windowsCounts[i]]);
+						
+						if (mac.checked)
+							decdataTables[i].addRow(['Mac', macCounts[i]]);
+						
+						if (nokia.checked)
+							decdataTables[i].addRow(['Nokia', nokiaCounts[i]]);
+							
+						if (instagram.checked)
+							decdataTables[i].addRow(['Instagram', instagramCounts[i]]);
+						
+						if (foursquare.checked)
+							decdataTables[i].addRow(['FourSquare', foursquareCounts[i]]);
+							
+						
+						if (other.checked)
+							decdataTables[i].addRow(['Other', otherCounts[i]]);
+				}
+				
+				drawCharts(decdataTables, regionsLatLng,colors);
+				
+				//checkall.checked = false;
+				//checknone.checked = false;
+				
+		
+		}
+
+        
+
+        var ol =new google.maps.OverlayView()
+        ChartMarker.prototype = ol;
+
+
+        function ChartMarker(options) {
+            this.setValues(options);
+
+            this.$inner = $('<div>').css({
+                position: 'relative',
+                left: '-50%', top: '-50%',
+                width: options.width,
+                height: options.height,
+                fontSize: '1px',
+                lineHeight: '1px',
+                backgroundColor: 'transparent',
+                cursor: 'default'
+            });
+
+            this.$div = $('<div>')
+              .append(this.$inner)
+              .css({
+                  position: 'absolute',
+                  display: 'none'
+              });
+        };
+
+
+
+        ChartMarker.prototype.onAdd = function () {
+            $(this.getPanes().overlayMouseTarget).append(this.$div);
+        };
+
+        ChartMarker.prototype.onRemove = function () {
+            this.$div.remove();
+        };
+
+        ChartMarker.prototype.remove = function () {
+            this.$div.remove();
+        };
+
+        ChartMarker.prototype.draw = function () {
+            var marker = this;
+            var projection = this.getProjection();
+            var position = projection.fromLatLngToDivPixel(this.get('position'));
+
+            this.$div.css({
+                left: position.x,
+                top: position.y,
+                display: 'block'
+            })
+
+            this.$inner
+              .html('<img src="' + this.get('image') + '"/>')
+              .click(function (event) {
+                  var events = marker.get('events');
+                  events && events.click(event);
+              });
+
+            this.chart = new google.visualization.PieChart(this.$inner[0]);
+            this.chart.draw(this.get('chartData'), this.get('chartOptions'));
+        };
+
+        
+		function checkAllNone()
+        {
+		    var newState;
+		    if (checkAllNoneBtn.innerText == "Check All") {
+		        newState = true;
+		        checkAllNoneBtn.innerText = "Check None";
+		    }
+		    else {
+		        newState = false;
+		        checkAllNoneBtn.innerText = "Check All";
+		    }
+
+		    
+		    android.checked = newState;
+		    iphone.checked = newState;
+		    blackberry.checked = newState;
+		    ios.checked = newState;
+		    ipad.checked = newState;
+		    windows.checked = newState;
+		    mac.checked = newState;
+		    nokia.checked = newState;
+		    instagram.checked = newState;
+		    foursquare.checked = newState;
+		    other.checked = newState;
+			
+			//	draw();
+		}
+		
+		
+
+		function findStep(total)
+		{
+			var outval = 0;
+			var increase = 5;
+			
+			
+			
+				if (total < 20)
+					outval = 10;
+				else if (total < 40)
+					outval = 10+increase*1;
+				else if (total < 60)
+					outval = 10+increase*2;
+				else if (total < 80)
+					outval = 10+increase*3;
+				else if (total < 100)
+					outval = 10+increase*4;
+				else if (total < 200)
+					outval = 10+increase*5;
+				else if (total < 400)
+					outval = 10+increase*6;
+				else if (total < 600)
+					outval = 10+increase*7;
+				else if (total < 800)
+					outval = 10+increase*8;
+				else if (total < 1000)
+					outval = 10+increase*9;
+				else if (total < 1200)
+					outval = 10+increase*10;
+				else if (total < 1400)
+					outval = 10+increase*11;
+				else if (total < 1600)
+					outval = 10+increase*12;
+				else if (total < 1800)
+					outval = 10+increase*13;
+				else if (total < 2000)
+					outval = 10+increase*14;
+				else if (total < 4000)
+					outval = 10+increase*15;
+				else if (total < 6000)
+					outval = 10+increase*16;
+				else if (total < 8000)
+					outval = 10+increase*17;
+				else if (total < 10000)
+					outval = 10+increase*18;
+				else 
+					outval = 10+increase*19;
+				
+			
+		
+			return outval;
+		
+		}
+		
+        var map;
+        var grid
+
+		
+        function clearCharts() {
+            while (markersArr.length) {
+                var myChart = markersArr.pop();
+                myChart.setMap(null);
+                myChart.remove();
+            }
+            markersArr = [];
+           
+        }
+
+        function drawCharts(dataTablesArr, regionsLatLngArr, colorsArr) {
+
+            clearCharts();
+
+            //grid = new Graticule(map);
+
+            var options = {
+                backgroundColor: 'transparent',
+                fontSize: 8.5,
+                legend: 'none',
+				colors: colorsArr
+            };
+
+
+
+            var inbound = 0;
+            var chartTG;
+
+            //alert(inboundsArr[0]);	
+           
+
+            for (var i = 0; i < numRegions; i++) {
+                if (regionsLatLngArr[i].lat() > lat1 && regionsLatLngArr[i].lat() < lat2 && regionsLatLngArr[i].lng() > lng1 && regionsLatLngArr[i].lng() < lng2) 
+				{
+					
+                    var total = 0;
+					var step = 0;
+					
+		
+					
+					if (numSources > 0)
+					{
+						for (var t=0; t < numSources; t++)
+						{
+							total = total + dataTablesArr[i].getValue(t,1);
+						}
+					}
+					
+					
+					//alert(total);
+					inbound++;
+					
+					step = findStep(total);
+					/*
+					if (step > 100)
+						stepY = stepY + 0.2;
+					else if (step > 75)
+						stepY = stepY + 0.1;
+					*/
+						
+                    markersArr.push(new ChartMarker({
+                        map: map,
+                        position: new google.maps.LatLng(regionsLatLngArr[i].lat() + stepY, regionsLatLngArr[i].lng() + stepX),
+                        width: circleSize + step,
+                        height: circleSize + step,
+                        chartData: dataTablesArr[i],
+                        chartOptions: options //{ backgroundColor: 'transparent', fontSize: 8, legend: 'none' },
+
+                    }));
+                }
+
+
+            }
+
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+        //google.setOnLoadCallback(initialize);
+
+
+
+
+
+    </script>
+    
+  </head>
+  
+  <body style="width:100%; height:100%">
+    
+    <div style="min-width:1340px; min-height:420px;">
+      <div class="navbar navbar-inverse" style="position: static;">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#" onclick="alert('hi');">Tweet Sources</a>
+        <div class="nav-collapse collapse navbar-inverse-collapse">
+        
+		<ul class="nav" style="padding:10px">
+                
+            <table style="margin-top:-10px; margin-left:30px;" >
+                <tr>
+                    <td style="background-color:#3366cc" class="language_color">
+                        
+                    </td>    
+					<td class="language_name">
+                    Android 
+					<input  type="checkbox" id="android" onchange="draw()" checked="checked"/>
+                        
+                    </td>
+
+                    <td style="background-color:#a9a9a9" class="language_color">
+                        
+                    </td>
+                    <td class="language_name">
+                    iPhone
+                    <input  type="checkbox" id="iphone" onchange="draw()" checked="checked"/>
+                    </td>
+                    
+                    <td style="background-color:#dc3912" class="language_color">
+                        
+                    </td>
+					<td class="language_name">
+                    BlackBerry
+				    <input  type="checkbox" id="blackberry" onchange="draw()" checked="checked"/>
+                    </td>
+                  
+					<td style="background-color:#ff9900"class="language_color">
+
+					</td>
+				    <td class="language_name">
+                    iOS
+				    <input  type="checkbox" id="ios" onchange="draw()" checked="checked"/>
+                    </td>
+                
+					<td style="background-color:#109618" class="language_color">
+                        
+					</td>
+                    <td class="language_name">
+                    iPad
+			        <input  type="checkbox" id="ipad" onchange="draw()" checked="checked"/>
+                    </td>
+					
+					<td style="background-color:#990099" class="language_color">
+                        
+					</td>
+					<td class="language_name">
+                    Windows
+			        <input  type="checkbox" id="windows" onchange="draw()" checked="checked"/>
+                    </td>
+
+				</tr>
+      
+        
+				<tr>
+				            
+                    <td style="background-color:#7e55fc" class="language_color">
+
+                    </td>
+					<td class="language_name">
+					Mac
+					<input  type="checkbox" id="mac" onchange="draw()" checked="checked"/>
+					</td>
+					
+					<td style="background-color:#9e7151" class="language_color">
+
+					</td>
+					<td class="language_name">
+					Nokia
+					<input  type="checkbox" id="nokia" onchange="draw()" checked="checked"/>
+					</td>
+        
+					<td style="background-color:#943634" class="language_color">
+
+					</td>
+					<td class="language_name">
+					Instagram
+					<input  type="checkbox" id="instagram" onchange="draw()" checked="checked"/>
+					</td>
+      
+					<td style="background-color:#fcf357"class="language_color">
+                       
+					</td>
+					<td class="language_name">
+					FourSquare
+					<input  type="checkbox" id="foursquare" onchange="draw()" checked="checked"/>
+					</td>
+					
+					<td style="background-color:#22aa99"class="language_color">
+
+					</td>
+					<td class="language_name">
+					Other
+					<input  type="checkbox" id="other" onchange="draw()"  />
+					</td>
+					
+					
+				</tr>
+			</table>
+
+		</ul>
+
+                <button type="button" id="checkAllNoneBtn" class="btn btn-mini  " onclick="checkAllNone()" style="width:80px;" >Check None</button>
+
+
+
+
+<ul class="nav pull-right"></ul>
+</div>
+<!-- /.nav-collapse -->
+</div>
+</div>
+<!-- /navbar-inner -->
+</div>
+<!-- /navbar -->
+
+
+
+<input type="text" id="pac-input" style="position: absolute; top:55px; left:40px; margin-top:10px; background-color:#1b1b1b; color:#fff; text-shadow: 0 -1px 0 rgba(0,0,0,0.25); " class="search-query span4" placeholder="Search City..."  >
+
+
+
+</div>
+
+<div id="map_canvas" style="bottom:0px; width:100%; position:absolute; top:50px; min-width:1340px; min-height:400px;">
+  
+</div>
+
+
+
+
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-49016258-1', 'gistic.org');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+​

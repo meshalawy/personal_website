@@ -1,0 +1,1240 @@
+﻿<!--
+You are free to copy and use this sample in accordance with the terms of the
+Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>
+      Tweet Languages Distribution in Saudi Arabia
+    </title>
+	
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js">
+    </script>
+    <script type="text/javascript" src="js/jquery-ui-1.7.1.custom.min.js">
+    </script>
+    
+    <script type="text/javascript" src="https://www.google.com/jsapi">
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places">
+    </script>
+	<script type="text/javascript" src="js/v3_ll_grat.js">
+    </script>
+    
+    <script src="js/jquery.js">
+    </script>
+    <script src="js/bootstrap-transition.js">
+    </script>
+    <script src="js/bootstrap-dropdown.js">
+    </script>
+	
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    
+	
+	<style>
+      html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+        font-size: 90%;
+      }
+      
+      
+      .cbox{
+        font-family: "Tahoma", "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+        font-size: 90%;
+      }
+      
+      
+      .language_name {
+        width:90px;
+        padding-left:3px;
+        color:#999;
+        font-size:12px;
+      }
+      
+      .language_color {
+        -o-border-radius:4px;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        
+        width:3px;
+        height:10px;
+        
+      }
+      
+      
+	</style>
+    
+    <script type="text/javascript">
+        google.load('visualization', '1', {
+            packages: ['corechart']
+        });
+    </script>
+    
+    
+    <script type="text/javascript">
+
+
+
+        //December Data
+        var decdataTables4 = [];
+        var decdataTables5 = [];
+        var decdataTables6 = [];
+        var decdataTables7 = [];
+        var decdataTables8 = [];
+        var decdataTables9 = [];
+        var decdataTables10 = [];
+        var decdataTables11 = [];
+        var decdataTables12 = [];
+        var decdataTables13 = [];
+        var decdataTables14 = [];
+        var decdataTables15 = [];
+
+        var decregionsLatLng4 = [];
+        var decregionsLatLng5 = [];
+        var decregionsLatLng6 = [];
+        var decregionsLatLng7 = [];
+        var decregionsLatLng8 = [];
+        var decregionsLatLng9 = [];
+        var decregionsLatLng10 = [];
+        var decregionsLatLng11 = [];
+        var decregionsLatLng12 = [];
+        var decregionsLatLng13 = [];
+        var decregionsLatLng14 = [];
+        var decregionsLatLng15 = [];
+
+        var decarabicCounts4 = []
+        var decarabicCounts5 = [];
+        var decarabicCounts6 = [];
+        var decarabicCounts7 = [];
+        var decarabicCounts8 = [];
+        var decarabicCounts9 = [];
+        var decarabicCounts10 = [];
+        var decarabicCounts11 = [];
+        var decarabicCounts12 = [];
+        var decarabicCounts13 = [];
+        var decarabicCounts14 = [];
+        var decarabicCounts15 = [];
+
+        //November Data
+
+        var novdataTables4 = [];
+        var novdataTables5 = [];
+        var novdataTables6 = [];
+        var novdataTables7 = [];
+        var novdataTables8 = [];
+        var novdataTables9 = [];
+        var novdataTables10 = [];
+        var novdataTables11 = [];
+        var novdataTables12 = [];
+        var novdataTables13 = [];
+        var novdataTables14 = [];
+        var novdataTables15 = [];
+
+        var novregionsLatLng4 = [];
+        var novregionsLatLng5 = [];
+        var novregionsLatLng6 = [];
+        var novregionsLatLng7 = [];
+        var novregionsLatLng8 = [];
+        var novregionsLatLng9 = [];
+        var novregionsLatLng10 = [];
+        var novregionsLatLng11 = [];
+        var novregionsLatLng12 = [];
+        var novregionsLatLng13 = [];
+        var novregionsLatLng14 = [];
+        var novregionsLatLng15 = [];
+
+        var novarabicCounts4 = []
+        var novarabicCounts5 = [];
+        var novarabicCounts6 = [];
+        var novarabicCounts7 = [];
+        var novarabicCounts8 = [];
+        var novarabicCounts9 = [];
+        var novarabicCounts10 = [];
+        var novarabicCounts11 = [];
+        var novarabicCounts12 = [];
+        var novarabicCounts13 = [];
+        var novarabicCounts14 = [];
+        var novarabicCounts15 = [];
+
+        //January Data
+
+        var jandataTables4 = [];
+        var jandataTables5 = [];
+        var jandataTables6 = [];
+        var jandataTables7 = [];
+        var jandataTables8 = [];
+        var jandataTables9 = [];
+        var jandataTables10 = [];
+        var jandataTables11 = [];
+        var jandataTables12 = [];
+        var jandataTables13 = [];
+        var jandataTables14 = [];
+        var jandataTables15 = [];
+
+        var janregionsLatLng4 = [];
+        var janregionsLatLng5 = [];
+        var janregionsLatLng6 = [];
+        var janregionsLatLng7 = [];
+        var janregionsLatLng8 = [];
+        var janregionsLatLng9 = [];
+        var janregionsLatLng10 = [];
+        var janregionsLatLng11 = [];
+        var janregionsLatLng12 = [];
+        var janregionsLatLng13 = [];
+        var janregionsLatLng14 = [];
+        var janregionsLatLng15 = [];
+
+        var janarabicCounts4 = []
+        var janarabicCounts5 = [];
+        var janarabicCounts6 = [];
+        var janarabicCounts7 = [];
+        var janarabicCounts8 = [];
+        var janarabicCounts9 = [];
+        var janarabicCounts10 = [];
+        var janarabicCounts11 = [];
+        var janarabicCounts12 = [];
+        var janarabicCounts13 = [];
+        var janarabicCounts14 = [];
+        var janarabicCounts15 = [];
+
+
+        var initialDraw = false;
+        function loadFile(zLevel, month, dataArr, latlngArr, aCountsArr) {
+
+            var fileName;
+
+            if (month == 11)
+                fileName = "november_zoom" + zLevel + ".csv";
+            else if (month == 12)
+                fileName = "december_zoom" + zLevel + ".csv";
+            else
+                fileName = "january_zoom" + zLevel + ".csv";
+
+            var req = new XMLHttpRequest();
+            req.open("GET", fileName, true);
+            //req.setRequestHeader('Access-Control-Allow-Origin', '*');
+            //req.setRequestHeader('Access-Control-Allow-Credentials', '*');
+            req.send(null);
+            //req.send();
+            req.onreadystatechange = function loadLanguageCounts() {
+                if (req.readyState == 4) {
+
+                    var lines = req.responseText.split('\n');
+                    numRegions = lines.length;
+
+                    for (var i = 0; i < lines.length; i++) {
+
+
+                        dataArr[i] = new google.visualization.DataTable();
+                        dataArr[i].addColumn('string', 'Language');
+                        dataArr[i].addColumn('number', 'Number of Tweets');
+
+
+                        var fields = lines[i].split('\t');
+
+                        latlngArr[i] = new google.maps.LatLng(parseFloat(fields[0]), parseFloat(fields[1]));
+						aCountsArr[i] = parseFloat(fields[2]);
+                        dataArr[i].addRow(['English', parseFloat(fields[3])]);
+                        dataArr[i].addRow(['Spanish', parseFloat(fields[4])]);
+                        dataArr[i].addRow(['Turkish', parseFloat(fields[5])]);
+                        dataArr[i].addRow(['Indonesian', parseFloat(fields[6])]);
+                        dataArr[i].addRow(['Tagalog', parseFloat(fields[7])]);
+                        dataArr[i].addRow(['French', parseFloat(fields[8])]);
+                        dataArr[i].addRow(['Persian', parseFloat(fields[9])]);
+                        dataArr[i].addRow(['Urdu', parseFloat(fields[10])]);
+                        dataArr[i].addRow(['Korean', parseFloat(fields[11])]);
+                        dataArr[i].addRow(['Portuguese', parseFloat(fields[15])]);
+                        dataArr[i].addRow(['German', parseFloat(fields[18])]);
+                        dataArr[i].addRow(['Tamil', parseFloat(fields[14])]);
+                        otherCount = parseFloat(fields[16]) + parseFloat(fields[12]) + parseFloat(fields[17]) + parseFloat(fields[13]) +
+                          parseFloat(fields[19]) + parseFloat(fields[20]) + parseFloat(fields[21]) + parseFloat(fields[22]) + parseFloat(fields[23]);
+                        dataArr[i].addRow(['Other', otherCount]);
+                    }
+                    if (zLevel == 15 & month == 1 & !initialDraw) {
+                        initialDraw = true;
+                        draw();
+                    }
+                }
+
+                //alert(zLevel+' '+dataArr.length+' '+latlngArr.length+' '+aCountsArr.length);
+                
+            }
+
+
+        }
+
+        //Loading December Data
+        loadFile(4, 11, novdataTables4, novregionsLatLng4, novarabicCounts4);
+        loadFile(5, 11, novdataTables5, novregionsLatLng5, novarabicCounts5);
+        loadFile(6, 11, novdataTables6, novregionsLatLng6, novarabicCounts6);
+        loadFile(7, 11, novdataTables7, novregionsLatLng7, novarabicCounts7);
+        loadFile(8, 11, novdataTables8, novregionsLatLng8, novarabicCounts8);
+        loadFile(9, 11, novdataTables9, novregionsLatLng9, novarabicCounts9);
+        loadFile(10, 11, novdataTables10, novregionsLatLng10, novarabicCounts10);
+        loadFile(11, 11, novdataTables11, novregionsLatLng11, novarabicCounts11);
+        loadFile(12, 11, novdataTables12, novregionsLatLng12, novarabicCounts12);
+        loadFile(13, 11, novdataTables13, novregionsLatLng13, novarabicCounts13);
+        loadFile(14, 11, novdataTables14, novregionsLatLng14, novarabicCounts14);
+        loadFile(15, 11, novdataTables15, novregionsLatLng15, novarabicCounts15);
+
+        //Loading November Data
+        loadFile(4, 12, decdataTables4, decregionsLatLng4, decarabicCounts4);
+        loadFile(5, 12, decdataTables5, decregionsLatLng5, decarabicCounts5);
+        loadFile(6, 12, decdataTables6, decregionsLatLng6, decarabicCounts6);
+        loadFile(7, 12, decdataTables7, decregionsLatLng7, decarabicCounts7);
+        loadFile(8, 12, decdataTables8, decregionsLatLng8, decarabicCounts8);
+        loadFile(9, 12, decdataTables9, decregionsLatLng9, decarabicCounts9);
+        loadFile(10, 12, decdataTables10, decregionsLatLng10, decarabicCounts10);
+        loadFile(11, 12, decdataTables11, decregionsLatLng11, decarabicCounts11);
+        loadFile(12, 12, decdataTables12, decregionsLatLng12, decarabicCounts12);
+        loadFile(13, 12, decdataTables13, decregionsLatLng13, decarabicCounts13);
+        loadFile(14, 12, decdataTables14, decregionsLatLng14, decarabicCounts14);
+        loadFile(15, 12, decdataTables15, decregionsLatLng15, decarabicCounts15);
+
+        //Loading January Data 
+        loadFile(4, 1, jandataTables4, janregionsLatLng4, janarabicCounts4);
+        loadFile(5, 1, jandataTables5, janregionsLatLng5, janarabicCounts5);
+        loadFile(6, 1, jandataTables6, janregionsLatLng6, janarabicCounts6);
+        loadFile(7, 1, jandataTables7, janregionsLatLng7, janarabicCounts7);
+        loadFile(8, 1, jandataTables8, janregionsLatLng8, janarabicCounts8);
+        loadFile(9, 1, jandataTables9, janregionsLatLng9, janarabicCounts9);
+        loadFile(10, 1, jandataTables10, janregionsLatLng10, janarabicCounts10);
+        loadFile(11, 1, jandataTables11, janregionsLatLng11, janarabicCounts11);
+        loadFile(12, 1, jandataTables12, janregionsLatLng12, janarabicCounts12);
+        loadFile(13, 1, jandataTables13, janregionsLatLng13, janarabicCounts13);
+        loadFile(14, 1, jandataTables14, janregionsLatLng14, janarabicCounts14);
+        loadFile(15, 1, jandataTables15, janregionsLatLng15, janarabicCounts15);
+
+
+
+        var numRegions;
+        var zoomLevel = 7;
+        var fileName;
+        var stepX;
+        var stepY;
+        var circleSize;
+        var mapCenter = new google.maps.LatLng(25, 45);
+        var lat1 = 17;
+        var lat2 = 30;
+        var lng1 = 38;
+        var lng2 = 52;
+        var currMonth = 12;
+
+        var markersArr = [];
+        var markers = [];
+
+
+
+        function initialize() {
+            map = new google.maps.Map($('#map_canvas')[0], {
+                zoom: zoomLevel,
+                minZoom: 4,
+                maxZoom: 15,
+                center: mapCenter,
+                panControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+
+
+            google.maps.event.addListener(map, 'idle', function () {
+                mapCenter = map.getCenter();
+                zoomLevel = map.getZoom();
+                var bounds = map.getBounds();
+                //alert('Zoom detected '+zoomLevel+' '+numRegions);			
+                //alert('Map center '+mapCenter);
+                //alert('Map bounds '+bounds);
+                lat1 = bounds.getSouthWest().lat();
+                lat2 = bounds.getNorthEast().lat();
+                lng1 = bounds.getSouthWest().lng();
+                lng2 = bounds.getNorthEast().lng();
+                //clearCharts();
+                //alert('zoom '+lat1);
+                if (zoomLevel > 3 && zoomLevel <= 15) {
+                    draw();
+                }
+            });
+
+
+            // Create the search box and link it to the UI element.
+            var input = (document.getElementById('pac-input'));
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+            var searchBox = new google.maps.places.SearchBox(input);
+
+            // Listen for the event fired when the user selects an item from the
+            // pick list. Retrieve the matching places for that item.
+            google.maps.event.addListener(searchBox, 'places_changed', function () {
+                var places = searchBox.getPlaces();
+
+                for (var i = 0, marker; marker = markers[i]; i++) {
+                    marker.setMap(null);
+                }
+
+                // For each place, get the icon, place name, and location.
+                markers = [];
+                var bounds = new google.maps.LatLngBounds();
+                for (var i = 0, place; place = places[i]; i++) {
+                    var image = {
+                        url: place.icon,
+                        size: new google.maps.Size(71, 71),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(17, 34),
+                        scaledSize: new google.maps.Size(25, 25)
+                    };
+
+                    // Create a marker for each place.
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        icon: image,
+                        title: place.name,
+                        position: place.geometry.location
+                    });
+
+                    markers.push(marker);
+                    bounds.extend(place.geometry.location);
+                }
+
+                map.fitBounds(bounds);
+            });
+
+            // Bias the SearchBox results towards places that are within the bounds of the
+            // current map's viewport.
+            google.maps.event.addListener(map, 'bounds_changed', function () {
+                var bounds = map.getBounds();
+                searchBox.setBounds(bounds);
+            });
+
+            draw();
+        }
+
+        function changeMonth() {
+            if (month.selectedIndex == 0) {
+                currMonth = 11;
+            }
+            else if (month.selectedIndex == 1) {
+                currMonth = 12;
+            }
+            else {
+                currMonth = 1;
+            }
+
+            draw();
+        }
+
+        function processArabic() {
+		
+
+			
+            if (arabic.checked) {
+			
+				
+                for (var i = 0; i < decdataTables4.length; i++)
+                    decdataTables4[i].addRow(['Arabic', decarabicCounts4[i]]);
+
+                for (var i = 0; i < decdataTables5.length; i++)
+                    decdataTables5[i].addRow(['Arabic', decarabicCounts5[i]]);
+
+                for (var i = 0; i < decdataTables6.length; i++)
+                    decdataTables6[i].addRow(['Arabic', decarabicCounts6[i]]);
+
+                for (var i = 0; i < decdataTables7.length; i++)
+                    decdataTables7[i].addRow(['Arabic', decarabicCounts7[i]]);
+
+                for (var i = 0; i < decdataTables8.length; i++)
+                    decdataTables8[i].addRow(['Arabic', decarabicCounts8[i]]);
+
+                for (var i = 0; i < decdataTables9.length; i++)
+                    decdataTables9[i].addRow(['Arabic', decarabicCounts9[i]]);
+
+                for (var i = 0; i < decdataTables10.length; i++)
+                    decdataTables10[i].addRow(['Arabic', decarabicCounts10[i]]);
+
+                for (var i = 0; i < decdataTables11.length; i++)
+                    decdataTables11[i].addRow(['Arabic', decarabicCounts11[i]]);
+
+                for (var i = 0; i < decdataTables12.length; i++)
+                    decdataTables12[i].addRow(['Arabic', decarabicCounts12[i]]);
+
+                for (var i = 0; i < decdataTables13.length; i++)
+                    decdataTables13[i].addRow(['Arabic', decarabicCounts13[i]]);
+
+                for (var i = 0; i < decdataTables14.length; i++)
+                    decdataTables14[i].addRow(['Arabic', decarabicCounts14[i]]);
+
+                for (var i = 0; i < decdataTables15.length; i++)
+                    decdataTables15[i].addRow(['Arabic', decarabicCounts15[i]]);
+
+                for (var i = 0; i < novdataTables4.length; i++)
+                    novdataTables4[i].addRow(['Arabic', novarabicCounts4[i]]);
+
+                for (var i = 0; i < novdataTables5.length; i++)
+                    novdataTables5[i].addRow(['Arabic', novarabicCounts5[i]]);
+
+                for (var i = 0; i < novdataTables6.length; i++)
+                    novdataTables6[i].addRow(['Arabic', novarabicCounts6[i]]);
+
+                for (var i = 0; i < novdataTables7.length; i++)
+                    novdataTables7[i].addRow(['Arabic', novarabicCounts7[i]]);
+
+                for (var i = 0; i < novdataTables8.length; i++)
+                    novdataTables8[i].addRow(['Arabic', novarabicCounts8[i]]);
+
+                for (var i = 0; i < novdataTables9.length; i++)
+                    novdataTables9[i].addRow(['Arabic', novarabicCounts9[i]]);
+
+                for (var i = 0; i < novdataTables10.length; i++)
+                    novdataTables10[i].addRow(['Arabic', novarabicCounts10[i]]);
+
+                for (var i = 0; i < novdataTables11.length; i++)
+                    novdataTables11[i].addRow(['Arabic', novarabicCounts11[i]]);
+
+                for (var i = 0; i < novdataTables12.length; i++)
+                    novdataTables12[i].addRow(['Arabic', novarabicCounts12[i]]);
+
+                for (var i = 0; i < novdataTables13.length; i++)
+                    novdataTables13[i].addRow(['Arabic', novarabicCounts13[i]]);
+
+                for (var i = 0; i < novdataTables14.length; i++)
+                    novdataTables14[i].addRow(['Arabic', novarabicCounts14[i]]);
+
+                for (var i = 0; i < novdataTables15.length; i++)
+                    novdataTables15[i].addRow(['Arabic', novarabicCounts15[i]]);
+
+                for (var i = 0; i < jandataTables4.length; i++)
+                    jandataTables4[i].addRow(['Arabic', janarabicCounts4[i]]);
+
+                for (var i = 0; i < jandataTables5.length; i++)
+                    jandataTables5[i].addRow(['Arabic', janarabicCounts5[i]]);
+
+                for (var i = 0; i < jandataTables6.length; i++)
+                    jandataTables6[i].addRow(['Arabic', janarabicCounts6[i]]);
+
+                for (var i = 0; i < jandataTables7.length; i++)
+                    jandataTables7[i].addRow(['Arabic', janarabicCounts7[i]]);
+
+                for (var i = 0; i < jandataTables8.length; i++)
+                    jandataTables8[i].addRow(['Arabic', janarabicCounts8[i]]);
+
+                for (var i = 0; i < jandataTables9.length; i++)
+                    jandataTables9[i].addRow(['Arabic', janarabicCounts9[i]]);
+
+                for (var i = 0; i < jandataTables10.length; i++)
+                    jandataTables10[i].addRow(['Arabic', janarabicCounts10[i]]);
+
+                for (var i = 0; i < jandataTables11.length; i++)
+                    jandataTables11[i].addRow(['Arabic', janarabicCounts11[i]]);
+
+                for (var i = 0; i < jandataTables12.length; i++)
+                    jandataTables12[i].addRow(['Arabic', janarabicCounts12[i]]);
+
+                for (var i = 0; i < jandataTables13.length; i++)
+                    jandataTables13[i].addRow(['Arabic', janarabicCounts13[i]]);
+
+                for (var i = 0; i < jandataTables14.length; i++)
+                    jandataTables14[i].addRow(['Arabic', janarabicCounts14[i]]);
+
+                for (var i = 0; i < jandataTables15.length; i++)
+                    jandataTables15[i].addRow(['Arabic', janarabicCounts15[i]]);
+
+
+                draw();
+            }
+            else {
+			
+				
+                for (var i = 0; i < decdataTables4.length; i++)
+                    decdataTables4[i].removeRow(13);
+
+                for (var i = 0; i < decdataTables5.length; i++)
+                    decdataTables5[i].removeRow(13);
+
+                for (var i = 0; i < decdataTables6.length; i++)
+                    decdataTables6[i].removeRow(13);
+
+                for (var i = 0; i < decdataTables7.length; i++)
+                    decdataTables7[i].removeRow(13);
+
+                for (var i = 0; i < decdataTables8.length; i++)
+                    decdataTables8[i].removeRow(13);
+
+                for (var i = 0; i < decdataTables9.length; i++)
+                    decdataTables9[i].removeRow(13);
+
+                for (var i = 0; i < decdataTables10.length; i++)
+                    decdataTables10[i].removeRow(13);
+
+                for (var i = 0; i < decdataTables11.length; i++)
+                    decdataTables11[i].removeRow(13);
+
+                for (var i = 0; i < decdataTables12.length; i++)
+                    decdataTables12[i].removeRow(13);
+
+                for (var i = 0; i < decdataTables13.length; i++)
+                    decdataTables13[i].removeRow(13);
+
+                for (var i = 0; i < decdataTables14.length; i++)
+                    decdataTables14[i].removeRow(13);
+
+                for (var i = 0; i < decdataTables15.length; i++)
+                    decdataTables15[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables4.length; i++)
+                    novdataTables4[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables5.length; i++)
+                    novdataTables5[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables6.length; i++)
+                    novdataTables6[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables7.length; i++)
+                    novdataTables7[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables8.length; i++)
+                    novdataTables8[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables9.length; i++)
+                    novdataTables9[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables10.length; i++)
+                    novdataTables10[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables11.length; i++)
+                    novdataTables11[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables12.length; i++)
+                    novdataTables12[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables13.length; i++)
+                    novdataTables13[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables14.length; i++)
+                    novdataTables14[i].removeRow(13);
+
+                for (var i = 0; i < novdataTables15.length; i++)
+                    novdataTables15[i].removeRow(13);
+
+                //January
+                for (var i = 0; i < jandataTables4.length; i++)
+                    jandataTables4[i].removeRow(13);
+
+                for (var i = 0; i < jandataTables5.length; i++)
+                    jandataTables5[i].removeRow(13);
+
+                for (var i = 0; i < jandataTables6.length; i++)
+                    jandataTables6[i].removeRow(13);
+
+                for (var i = 0; i < jandataTables7.length; i++)
+                    jandataTables7[i].removeRow(13);
+
+                for (var i = 0; i < jandataTables8.length; i++)
+                    jandataTables8[i].removeRow(13);
+
+                for (var i = 0; i < jandataTables9.length; i++)
+                    jandataTables9[i].removeRow(13);
+
+                for (var i = 0; i < jandataTables10.length; i++)
+                    jandataTables10[i].removeRow(13);
+
+                for (var i = 0; i < jandataTables11.length; i++)
+                    jandataTables11[i].removeRow(13);
+
+                for (var i = 0; i < jandataTables12.length; i++)
+                    jandataTables12[i].removeRow(13);
+
+                for (var i = 0; i < jandataTables13.length; i++)
+                    jandataTables13[i].removeRow(13);
+
+                for (var i = 0; i < jandataTables14.length; i++)
+                    jandataTables14[i].removeRow(13);
+
+                for (var i = 0; i < jandataTables15.length; i++)
+                    jandataTables15[i].removeRow(13);
+
+
+                draw();
+            }
+        }
+
+
+
+
+        //mood = 1 ==> intialize the inbounds array, mood = 0 ==> do not change the inbounds array
+        function draw() {
+		
+			
+            if (zoomLevel == 4) {
+                stepX = 10;
+                stepY = 10;
+                circleSize = 80;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables4.length;
+                    drawCharts(novdataTables4, novregionsLatLng4);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables4.length;
+                    drawCharts(decdataTables4, decregionsLatLng4);
+                }
+                else {
+                    numRegions = jandataTables4.length;
+                    drawCharts(jandataTables4, janregionsLatLng4);
+                }
+
+            }
+
+            else if (zoomLevel == 5) {
+                stepX = 2.5;
+                stepY = 2.25;
+                circleSize = 70;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables5.length;
+                    drawCharts(novdataTables5, novregionsLatLng5);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables5.length;
+                    drawCharts(decdataTables5, decregionsLatLng5);
+                }
+                else {
+                    numRegions = jandataTables5.length;
+                    drawCharts(jandataTables5, janregionsLatLng5);
+                }
+
+            }
+            else if (zoomLevel == 6) {
+                stepX = 1;
+                stepY = 1.4;
+                circleSize = 70;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables6.length;
+                    drawCharts(novdataTables6, novregionsLatLng6);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables6.length;
+                    drawCharts(decdataTables6, decregionsLatLng6);
+                }
+                else {
+                    numRegions = jandataTables6.length;
+                    drawCharts(jandataTables6, janregionsLatLng6);
+                }
+
+            }
+
+            else if (zoomLevel == 7) {
+				
+                stepX = 0.5;
+                stepY = 0.7;
+                circleSize = 70;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables7.length;
+                    drawCharts(novdataTables7, novregionsLatLng7);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables7.length;
+                    drawCharts(decdataTables7, decregionsLatLng7);
+                }
+                else {
+                    numRegions = jandataTables7.length;
+                    drawCharts(jandataTables7, janregionsLatLng7);
+                }
+            }
+            else if (zoomLevel == 8) {
+                stepX = 0.25;
+                stepY = 0.3;
+                circleSize = 60;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables8.length;
+                    drawCharts(novdataTables8, novregionsLatLng8);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables8.length;
+                    drawCharts(decdataTables8, decregionsLatLng8);
+                }
+                else {
+                    numRegions = jandataTables8.length;
+                    drawCharts(jandataTables8, janregionsLatLng8);
+                }
+            }
+            else if (zoomLevel == 9) {
+                stepX = 0.25;
+                stepY = 0.15;
+                circleSize = 50;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables9.length;
+                    drawCharts(novdataTables9, novregionsLatLng9);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables9.length;
+                    drawCharts(decdataTables9, decregionsLatLng9);
+                }
+                else {
+                    numRegions = jandataTables9.length;
+                    drawCharts(jandataTables9, janregionsLatLng9);
+                }
+            }
+            else if (zoomLevel == 10) {
+                stepX = 0.1;
+                stepY = 0.06;
+                circleSize = 50;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables10.length;
+                    drawCharts(novdataTables10, novregionsLatLng10);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables10.length;
+                    drawCharts(decdataTables10, decregionsLatLng10);
+                }
+                else {
+                    numRegions = jandataTables10.length;
+                    drawCharts(jandataTables10, janregionsLatLng10);
+                }
+            }
+
+            else if (zoomLevel == 11) {
+                stepX = 0.05;
+                stepY = 0.05;
+                circleSize = 50;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables11.length;
+                    drawCharts(novdataTables11, novregionsLatLng11);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables11.length;
+                    drawCharts(decdataTables11, decregionsLatLng11);
+                }
+                else {
+                    numRegions = jandataTables11.length;
+                    drawCharts(jandataTables11, janregionsLatLng11);
+                }
+            }
+            else if (zoomLevel == 12) {
+                stepX = 0.025;
+                stepY = 0.02;
+                circleSize = 50;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables12.length;
+                    drawCharts(novdataTables12, novregionsLatLng12);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables12.length;
+                    drawCharts(decdataTables12, decregionsLatLng12);
+                }
+                else {
+                    numRegions = jandataTables12.length;
+                    drawCharts(jandataTables12, janregionsLatLng12);
+                }
+            }
+
+            else if (zoomLevel == 13) {
+                stepX = 0.01;
+                stepY = 0.007;
+                circleSize = 40;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables13.length;
+                    drawCharts(novdataTables13, novregionsLatLng13);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables13.length;
+                    drawCharts(decdataTables13, decregionsLatLng13);
+                }
+                else {
+                    numRegions = jandataTables13.length;
+                    drawCharts(jandataTables13, janregionsLatLng13);
+                }
+            }
+
+            else if (zoomLevel == 14) {
+                stepX = 0.005;
+                stepY = 0.0025;
+                circleSize = 40;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables14.length;
+                    drawCharts(novdataTables14, novregionsLatLng14);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables14.length;
+                    drawCharts(decdataTables14, decregionsLatLng14);
+                }
+                else {
+                    numRegions = jandataTables14.length;
+                    drawCharts(jandataTables14, janregionsLatLng14);
+                }
+            }
+
+            else if (zoomLevel == 15) {
+                stepX = 0.0025;
+                stepY = 0.002;
+                circleSize = 40;
+
+                if (currMonth == 11) {
+                    numRegions = novdataTables15.length;
+                    drawCharts(novdataTables15, novregionsLatLng15);
+                }
+                else if (currMonth == 12) {
+                    numRegions = decdataTables15.length;
+                    drawCharts(decdataTables15, decregionsLatLng15);
+                }
+                else {
+                    numRegions = jandataTables15.length;
+                    drawCharts(jandataTables15, janregionsLatLng15);
+                }
+            }
+
+        }
+
+
+
+        var ol =new google.maps.OverlayView()
+        ChartMarker.prototype = ol;
+
+
+        function ChartMarker(options) {
+            this.setValues(options);
+
+            this.$inner = $('<div>').css({
+                position: 'relative',
+                left: '-50%', top: '-50%',
+                width: options.width,
+                height: options.height,
+                fontSize: '1px',
+                lineHeight: '1px',
+                backgroundColor: 'transparent',
+                cursor: 'default'
+            });
+
+            this.$div = $('<div>')
+              .append(this.$inner)
+              .css({
+                  position: 'absolute',
+                  display: 'none'
+              });
+        };
+
+
+
+        ChartMarker.prototype.onAdd = function () {
+            $(this.getPanes().overlayMouseTarget).append(this.$div);
+        };
+
+        ChartMarker.prototype.onRemove = function () {
+            this.$div.remove();
+        };
+
+        ChartMarker.prototype.remove = function () {
+            this.$div.remove();
+        };
+
+        ChartMarker.prototype.draw = function () {
+            var marker = this;
+            var projection = this.getProjection();
+            var position = projection.fromLatLngToDivPixel(this.get('position'));
+
+            this.$div.css({
+                left: position.x,
+                top: position.y,
+                display: 'block'
+            })
+
+            this.$inner
+              .html('<img src="' + this.get('image') + '"/>')
+              .click(function (event) {
+                  var events = marker.get('events');
+                  events && events.click(event);
+              });
+
+            this.chart = new google.visualization.PieChart(this.$inner[0]);
+            this.chart.draw(this.get('chartData'), this.get('chartOptions'));
+        };
+
+
+        var map;
+        var grid
+
+
+        function clearCharts() {
+            while (markersArr.length) {
+                var myChart = markersArr.pop();
+                myChart.setMap(null);
+                myChart.remove();
+            }
+            markersArr = [];
+           
+        }
+
+        function drawCharts(dataTablesArr, regionsLatLngArr) {
+
+            clearCharts();
+
+            //grid = new Graticule(map);
+
+            var options = {
+                backgroundColor: 'transparent',
+                fontSize: 11.5,
+                legend: 'none',
+                colors: ['#3366cc', '#55d7d7', '#dc3912', '#ff9900', '#109618', '#990099', '#9e7151', '#a9a9a9', '#fcf357', '#943634', '#7e55fc', '#22aa99', '#e14f9e', '#ED561B']
+            };
+
+
+
+            var inbound = 0;
+            var chartTG;
+
+            //alert(inboundsArr[0]);	
+            
+
+            
+
+
+            for (var i = 0; i < numRegions; i++) {
+                if (regionsLatLngArr[i].lat() > lat1 && regionsLatLngArr[i].lat() < lat2 && regionsLatLngArr[i].lng() > lng1 && regionsLatLngArr[i].lng() < lng2) 
+				{
+
+                    inbound++;
+                    markersArr.push(new ChartMarker({
+                        map: map,
+                        position: new google.maps.LatLng(regionsLatLngArr[i].lat() + stepY, regionsLatLngArr[i].lng() + stepX),
+                        width: circleSize + 35,
+                        height: circleSize + 35,
+                        chartData: dataTablesArr[i],
+                        chartOptions: options //{ backgroundColor: 'transparent', fontSize: 8, legend: 'none' },
+
+                    }));
+                }
+
+
+            }
+
+            //dragend
+
+
+
+
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+        //google.setOnLoadCallback(initialize);
+
+
+
+
+
+    </script>
+    
+  </head>
+  
+  <body style="width:100%; height:100%">
+    
+    <div style="min-width:1340px; min-height:400px;">
+      <div class="navbar navbar-inverse" style="position: static;">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+              <span class="icon-bar">
+              </span>
+              <span class="icon-bar">
+              </span>
+              <span class="icon-bar">
+              </span>
+            </a>
+            <a class="brand" href="#" onclick="alert('hi');">
+              Tweet Languages
+            </a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav" style="padding:10px">
+                
+                <table style="margin-top:-10px; margin-left:30px;">
+                  <tr>
+                    <td style="background-color:#3366cc" class="language_color">
+                    </td>
+                    <td class="language_name">
+                      English 
+                    </td>
+                    
+                    
+                    <td style="background-color:#55d7d7" class="language_color">
+                    </td>
+                    <td class="language_name">
+                      Spanish
+                    </td>
+                    
+                    
+                    <TD style="background-color:#dc3912" class="language_color">
+                    </td>
+                  <td class="language_name">
+                    Turkish
+                  </td>
+                  
+                  <TD style="background-color:#ff9900"class="language_color">
+                  </td>
+				<td class="language_name">
+                  Indonesian
+                </td>
+                
+                
+				<TD style="background-color:#109618" class="language_color">
+                </td>
+              <td class="language_name">
+                Tagalog
+              </td>
+              
+              <TD style="background-color:#990099" class="language_color">
+              </td>
+            <td class="language_name">
+              French
+            </td>
+            
+            <TD style="background-color:#ED561B" class="language_color">
+            </td>
+          <td class="language_name">
+            
+            Arabic
+            <input  type="checkbox" id="arabic" onchange="processArabic()" />
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+          </td>
+        </tr>
+        
+        <tr>
+          
+          
+          <TD style="background-color:#9e7151" class="language_color">
+          </td>
+        <td class="language_name">
+          Persian
+        </td>
+        
+        <TD style="background-color:#a9a9a9" class="language_color">
+        </td>
+      <td class="language_name">
+        Urdu
+      </td>
+      
+      <TD style="background-color:#fcf357"class="language_color">
+      </td>
+    <td class="language_name">
+      Korean
+    </td>
+    
+    
+    <TD style="background-color:#943634" class="language_color">
+    </td>
+  <td class="language_name">
+    Portuguese
+  </td>
+  
+  <TD style="background-color:#7e55fc" class="language_color">
+  </td>
+<td class="language_name">
+  German
+</td>
+
+<TD style="background-color:#22aa99" class="language_color">
+</td>
+<td class="language_name">
+  Tamil
+</td>
+
+<TD style="background-color:#e14f9e" class="language_color" >
+</td>
+<td class="language_name">
+  Other
+</td>
+
+
+
+</td>
+</tr>
+</table>
+
+</ul>
+
+
+
+
+<form class="navbar-search pull-right" >
+  <select name="month" id="month" onchange="changeMonth()" class="span2" style="margin-top:3px; margin-right:10px; margin-bottom:0px; height:28px;" >
+    <option value="11">
+      November
+    </option>
+    <option value="12" selected="selected">
+      December
+    </option>
+    <option value="1">
+      January
+    </option>
+  </select>
+  
+  
+  
+</form>
+<ul class="nav pull-right">
+  
+  
+  
+  
+  
+  
+  
+</ul>
+</div>
+<!-- /.nav-collapse -->
+</div>
+</div>
+<!-- /navbar-inner -->
+</div>
+<!-- /navbar -->
+
+
+
+<input type="text" id="pac-input" style="position: absolute; top:55px; left:40px; margin-top:10px; background-color:#1b1b1b; color:#fff; text-shadow: 0 -1px 0 rgba(0,0,0,0.25); " class="search-query span4" placeholder="Search City..."  >
+
+
+
+</div>
+
+<div id="map_canvas" style="bottom:0px; width:100%; position:absolute; top:50px; min-width:1340px; min-height:400px;">
+  
+</div>
+
+
+
+
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-49016258-1', 'gistic.org');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+​
