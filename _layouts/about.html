@@ -4,35 +4,34 @@ layout: default
 
 <div class="post">
 
-  <header class="post-header">
+  <header class="post-header my-profile clearfix">
     {% if page.profile %}
     <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
       {% if page.profile.image %}
         <img class="img-fluid z-depth-1 rounded-circle" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
       {% endif %}
     </div>
-    <div class="post-header-test clearfix">
+    <div>
       <h1 class="post-title">
-        <br>
         {% if site.title == "blank" %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{% else %}{{ site.title }}{% endif %}
-       </h1>
-       <p class="desc">{{ page.description }}</p>
-       {% if page.social %}
-       <div class="social">
-         <div class="contact-icons">
-           {% include social.html %}
-         </div>
-         <div class="contact-note">{{ site.contact_note }}</div>
-       </div>
-       {% endif %}   
+      </h1>
+      <p class="desc">{{ page.description }}</p>
     </div>
-    {% if page.profile.address %}
-      <div class="address clearfix">
-        {{ page.profile.address }}
+    {% if page.social %}
+    <div class="social">
+      <div class="contact-icons">
+        {% include social.html %}
       </div>
+      <div class="contact-note">{{ site.contact_note }}</div>
+    </div>
+    {% endif %}   
+    {% if page.profile.address %}
+    <div class="address clearfix">
+      {{ page.profile.address }}
+    </div>
+    {% endif %}
     {% endif %}
   </header>
-    {% endif %}
 
     <article>
     <div class="clearfix">

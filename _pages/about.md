@@ -25,6 +25,5 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-<br>
 ## About me
 Mashaal is a PhD student at the Computer Science and Engineering Department, University of Minnesota - Twin Cities, under the supervision of Prof. Mohammed Mokbel. Mashaal Obtained his BS degree in 2015 with first class honours from the Computer Engineering department at Umm Al-Qura University, Makkah, Saudi Arabia. His primary research interest is big data management system.

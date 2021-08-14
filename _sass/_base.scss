@@ -49,11 +49,15 @@ blockquote {
 }
 
 // Profile
+.my-profile {
+  text-align: center;
+  margin-bottom: 6rem;
+}
 
 .profile {
   margin-left: 1rem;
   width: 100%;
-
+  
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -66,11 +70,24 @@ blockquote {
 }
 
 @media (min-width: 576px) {
+  .my-profile {
+    text-align: left;
+    position: relative; 
+    margin-top: 6rem; 
+  }
+
   .profile {
     width: 30%;
+    position: absolute;
+    right: .5em;
+    top: 50%;
+    transform: translate(0,-50%);
+
     .address {
       p { display: block; }
     }
+    img {width: 100%; margin-bottom: 0; }
+    
   }
 }
 
@@ -202,7 +219,6 @@ blockquote {
 // Social (bottom)
 
 .social {
-  text-align: left;
   .contact-icons {
     font-size: 2rem;
     a {
