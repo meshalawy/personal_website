@@ -26,4 +26,5 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 ## About me
-Mashaal is a PhD student at the Computer Science and Engineering Department, University of Minnesota - Twin Cities, under the supervision of Prof. Mohammed Mokbel. Mashaal Obtained his BS degree in 2015 with first class honours from the Computer Engineering department at Umm Al-Qura University, Makkah, Saudi Arabia. His primary research interest is big data management system.
+I am a Ph.D. candidate at the Department of Computer Science and Engineering at the University of Minnesota, advised by Dr. Mohamed Mokbel. I Obtained my Bachelor's degree in Computer Engineering in 2015 with first class honours from Umm Al-Qura University, Makkah, Saudi Arabia, and my Master's degree in 2018 from the Department of Computer Science and Engineering at the University of Minnesota. My current research focuses on providing accurate map services mainly by improving the quality of the map itself using machine learning and other similar approaches. Such map services include routing, ETAs, range and KNN queries, etc. My prior work includes spatial knowledge bases (spatial MLN) and spatial data management.
+
