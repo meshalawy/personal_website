@@ -161,7 +161,7 @@ scholar:
   locale: en
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: mashaal.bib
   bibliography_template: bib
 
   replace_strings: true
