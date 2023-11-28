@@ -2,16 +2,27 @@
 ---
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  {% if entry._abbr %}
-    {% if site.data.venues[entry._abbr] %}
-    <abbr class="badge"><a href="{{site.data.venues[entry._abbr].url}}" target="_blank">{{entry._abbr}}</a></abbr>
-    {% else %}
-    <abbr class="badge">{{entry._abbr}}</abbr>
+  <div class="col-sm-2">
+    <div class="spotlight">
+    {% if entry._abbr %}
+      {% if site.data.venues[entry._abbr] %}
+      <abbr class="badge"><a href="{{site.data.venues[entry._abbr].url}}" target="_blank">{{entry._abbr}}</a></abbr>
+      {% else %}
+      <abbr class="badge">{{entry._abbr}}</abbr>
+      {% endif %}
     {% endif %}
-  {% endif %}
-  </div>
+    </div>
 
+    <div class="spotlight">
+      {% if entry._award %}
+        {% if entry._award_link %}
+        <award class="badge"><a href="{{entry._award_link}}" target="_blank">{{entry._award}}</a></award>
+        {% else %}
+        <award class="badge">{{entry._award}}</award>
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
   <div id="{{entry.key}}" class="col-sm-8">
     {% if entry.type == "thesis" %}
       {{reference}}
@@ -82,7 +93,7 @@
     
     <div class="links">
     {% for tag in entry %}
-    {% if tag[0] != "_abbr" %}
+    {% if tag[0] != "_abbr" and tag[0] != "_award" and tag[0] != "_award_link" %}
     {% assign start = tag[0] | slice: 0,1  %}
     {% if start=="_" %}  
     {% assign key = tag[0] | replace: "_", " "  %}

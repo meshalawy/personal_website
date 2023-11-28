@@ -412,24 +412,29 @@ footer.sticky-bottom {
 
     li {
       margin-bottom: 1rem;
-      .abbr {
+      .spotlight {
         height: 2rem;
         margin-bottom: 0.5rem;
+        display: inline-block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        a {
+          color: white;
+          &:hover {
+            text-decoration: none;
+          }
+        }
         abbr {
-          display: inline-block;
           background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
-          a {
-            color: white;
-            &:hover {
-              text-decoration: none;
-            }
-          }
         }
-        .award {
-          color: var(--global-theme-color) !important;
-          border: 1px solid var(--global-theme-color);
+        award {
+          // color: var(--global-theme-color) !important;
+          // border: 1px solid var(--global-theme-color);
+          background-color:  #f44336;
+          padding-left: 1rem;
+          padding-right: 1rem;
         }
       }
       .title {
