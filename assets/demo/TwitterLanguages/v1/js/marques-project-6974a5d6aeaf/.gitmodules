@@ -1,9 +1,0 @@
-[submodule "marques/libraries/lithium"]
-	path = marques/libraries/lithium
-	url = git://github.com/UnionOfRAD/lithium.git
-[submodule "marques/libraries/li3_paginate"]
-	path = marques/libraries/li3_paginate
-	url = https://github.com/primetheus/li3_paginate.git
-[submodule "marques/libraries/li3_flash"]
-	path = marques/libraries/li3_flash
-	url = https://github.com/rich97/li3_flash.git
